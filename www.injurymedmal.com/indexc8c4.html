@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+
+<!-- Mirrored from www.injurymedmal.com/?p=47663 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Apr 2022 16:32:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">
+    window.javascriptErrors = []; 
+    window.addEventListener('error', (event) => {
+        window.javascriptErrors.push(event.type + ': ' + event.message); 
+    });
+    window.addEventListener('unhandledrejection', (event) => {
+        window.javascriptErrors.push(event.reason);
+    });
+    let oldConsoleError = console.error;
+    console.error = function () {
+        window.javascriptErrors.push(arguments);
+        oldConsoleError.apply(console,arguments)
+    }
+</script>
+        
+<script>
+    // source from: https://unpkg.com/web-vitals@2.0.0/dist/web-vitals.iife.js
+    var webVitals=function(e){"use strict";var t,n,i,a,r=function(e,t){return{name:e,value:void 0===t?-1:t,delta:0,entries:[],id:"v2-".concat(Date.now(),"-").concat(Math.floor(8999999999999*Math.random())+1e12)}},o=function(e,t){try{if(PerformanceObserver.supportedEntryTypes.includes(e)){if("first-input"===e&&!("PerformanceEventTiming"in self))return;var n=new PerformanceObserver((function(e){return e.getEntries().map(t)}));return n.observe({type:e,buffered:!0}),n}}catch(e){}},u=function(e,t){var n=function n(i){"pagehide"!==i.type&&"hidden"!==document.visibilityState||(e(i),t&&(removeEventListener("visibilitychange",n,!0),removeEventListener("pagehide",n,!0)))};addEventListener("visibilitychange",n,!0),addEventListener("pagehide",n,!0)},c=function(e){addEventListener("pageshow",(function(t){t.persisted&&e(t)}),!0)},s="function"==typeof WeakSet?new WeakSet:new Set,f=function(e,t,n){var i;return function(){t.value>=0&&(n||s.has(t)||"hidden"===document.visibilityState)&&(t.delta=t.value-(i||0),(t.delta||void 0===i)&&(i=t.value,e(t)))}},d=-1,v=function(){return"hidden"===document.visibilityState?0:1/0},m=function(){u((function(e){var t=e.timeStamp;d=t}),!0)},p=function(){return d<0&&(d=v(),m(),c((function(){setTimeout((function(){d=v(),m()}),0)}))),{get firstHiddenTime(){return d}}},l=function(e,t){var n,i=p(),a=r("FCP"),u=function(e){"first-contentful-paint"===e.name&&(v&&v.disconnect(),e.startTime<i.firstHiddenTime&&(a.value=e.startTime,a.entries.push(e),s.add(a),n()))},d=performance.getEntriesByName("first-contentful-paint")[0],v=d?null:o("paint",u);(d||v)&&(n=f(e,a,t),d&&u(d),c((function(i){a=r("FCP"),n=f(e,a,t),requestAnimationFrame((function(){requestAnimationFrame((function(){a.value=performance.now()-i.timeStamp,s.add(a),n()}))}))})))},h=!1,g=-1,y={passive:!0,capture:!0},T=new Date,S=function(e,a){t||(t=a,n=e,i=new Date,w(removeEventListener),E())},E=function(){if(n>=0&&n<i-T){var e={entryType:"first-input",name:t.type,target:t.target,cancelable:t.cancelable,startTime:t.timeStamp,processingStart:t.timeStamp+n};a.forEach((function(t){t(e)})),a=[]}},L=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){S(e,t),a()},i=function(){a()},a=function(){removeEventListener("pointerup",n,y),removeEventListener("pointercancel",i,y)};addEventListener("pointerup",n,y),addEventListener("pointercancel",i,y)}(t,e):S(t,e)}},w=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,L,y)}))};return e.getCLS=function(e,t){h||(l((function(e){g=e.value})),h=!0);var n,i=function(t){g>-1&&e(t)},a=r("CLS",0),s=0,d=[],v=function(e){if(!e.hadRecentInput){var t=d[0],i=d[d.length-1];s&&e.startTime-i.startTime<1e3&&e.startTime-t.startTime<5e3?(s+=e.value,d.push(e)):(s=e.value,d=[e]),s>a.value&&(a.value=s,a.entries=d,n())}},m=o("layout-shift",v);m&&(n=f(i,a,t),u((function(){m.takeRecords().map(v),n()})),c((function(){s=0,g=-1,a=r("CLS",0),n=f(i,a,t)})))},e.getFCP=l,e.getFID=function(e,i){var d,v=p(),m=r("FID"),l=function(e){e.startTime<v.firstHiddenTime&&(m.value=e.processingStart-e.startTime,m.entries.push(e),s.add(m),d())},h=o("first-input",l);d=f(e,m,i),h&&u((function(){h.takeRecords().map(l),h.disconnect()}),!0),h&&c((function(){var o;m=r("FID"),d=f(e,m,i),a=[],n=-1,t=null,w(addEventListener),o=l,a.push(o),E()}))},e.getLCP=function(e,t){var n,i=p(),a=r("LCP"),d=function(e){var t=e.startTime;t<i.firstHiddenTime&&(a.value=t,a.entries.push(e)),n()},v=o("largest-contentful-paint",d);if(v){n=f(e,a,t);var m=function(){s.has(a)||(v.takeRecords().map(d),v.disconnect(),s.add(a),n())};["keydown","click"].forEach((function(e){addEventListener(e,m,{once:!0,capture:!0})})),u(m,!0),c((function(i){a=r("LCP"),n=f(e,a,t),requestAnimationFrame((function(){requestAnimationFrame((function(){a.value=performance.now()-i.timeStamp,s.add(a),n()}))}))}))}},e.getTTFB=function(e){var t,n=r("TTFB");t=function(){try{var t=performance.getEntriesByType("navigation")[0]||function(){var e=performance.timing,t={entryType:"navigation",startTime:0};for(var n in e)"navigationStart"!==n&&"toJSON"!==n&&(t[n]=Math.max(e[n]-e.navigationStart,0));return t}();if(n.value=n.delta=t.responseStart,n.value<0)return;n.entries=[t],e(n)}catch(e){}},"complete"===document.readyState?setTimeout(t,0):addEventListener("pageshow",t)},Object.defineProperty(e,"__esModule",{value:!0}),e}({});
+    window.webVitalsReport = [];
+    
+    function captureVitals(obj) {
+      window.webVitalsReport.push(obj);
+      if( typeof _satellite !== 'undefined' ) {
+        _satellite.track('web-vitals-updated');
+      }
+    }
+    
+    webVitals.getCLS(captureVitals);
+    webVitals.getFID(captureVitals);
+    webVitals.getLCP(captureVitals);
+    webVitals.getFCP(captureVitals);
+    webVitals.getTTFB(captureVitals);
+</script>
+<link rel="dns-prefetch" href="https://dpm.demdex.net/"><link rel="preconnect" href="https://dpm.demdex.net/"><link rel="dns-prefetch" href="https://facebook.com/"><link rel="preconnect" href="https://facebook.com/"><link rel="dns-prefetch" href="https://connect.facebook.net/"><link rel="preconnect" href="https://connect.facebook.net/">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="pingback" href="xmlrpc.html">
+<title>Columbus Personal Injury Lawyers | Lamkin, Van Eman, Trimble &amp; Dougherty, LLC</title>
+
+<meta name="description" content="For over 50 years, Lamkin, Van Eman, Trimble &amp; Dougherty, LLC, has helped individuals in Columbus recover from auto accidents and other personal injuries. For a free consultation call 614-360-2706.">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="google-site-verification" content="Hvsi_7AQeGJp-eoGYGoRrOWVd5H7pj2umWtpAVwEprw">
+<link rel="canonical" href="index.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Lamkin, Van Eman, Trimble &amp; Dougherty, LLC">
+<meta property="og:type" content="activity">
+<meta property="og:title" content="Columbus Personal Injury Lawyers | Lamkin, Van Eman, Trimble &amp; Dougherty, LLC">
+<meta property="og:description" content="For over 50 years, Lamkin, Van Eman, Trimble &amp; Dougherty, LLC, has helped individuals in Columbus recover from auto accidents and other personal injuries. For a free consultation call 614-360-2706.">
+<meta property="og:url" content="https://www.injurymedmal.com/">
+<meta property="og:image" content="https://www.injurymedmal.com/wp-content/uploads/sites/1402039/2021/04/lamkin-og-image.jpg">
+<meta property="og:image:secure_url" content="https://www.injurymedmal.com/wp-content/uploads/sites/1402039/2021/04/lamkin-og-image.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Columbus Personal Injury Lawyers | Lamkin, Van Eman, Trimble &amp; Dougherty, LLC">
+<meta name="twitter:description" content="For over 50 years, Lamkin, Van Eman, Trimble &amp; Dougherty, LLC, has helped individuals in Columbus recover from auto accidents and other personal injuries. For a free consultation call 614-360-2706.">
+<meta name="twitter:image" content="https://www.injurymedmal.com/wp-content/uploads/sites/1402039/2021/04/lamkin-og-image.jpg">
+
+<link rel="alternate" type="application/rss+xml" title="Lamkin, Van Eman, Trimble &amp; Dougherty, LLC &raquo; Feed" href="feed/index.html">
+<meta content="Divi Child v.3.19.18" name="generator"><style>@media (max-width:980px){.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_4{width:25% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_1_3,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_3{width:33.333% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_1_2,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_2{width:50% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_2_3,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_3{width:66.666% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_3_4,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_4{width:75% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_2_5,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_5{width:40% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_3_5,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_5{width:60% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_1_5,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_5{width:20% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters1>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_6{width:16.667% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column{margin-right:3% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et-last-child,.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column:last-of-type,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et-last-child,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column:last-of-type{margin-right:0 !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_1_4,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_4{width:22.75% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_1_3,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_3{width:31.333% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_1_2,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_2{width:48.5% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_2_3,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_3{width:65.666% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_3_4,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_4{width:74.25% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_2_5,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_5{width:38.2% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_3_5,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_5{width:58.8% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_1_5,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_5{width:17.6% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters2>.et_pb_column.et_pb_column_1_6,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_6{width:14.167% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column{margin-right:5.5% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et-last-child,.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column:last-of-type,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et-last-child,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column:last-of-type{margin-right:0 !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_1_4,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_4{width:20.875% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_1_3,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_3{width:29.666% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_1_2,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_2{width:47.25% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_2_3,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_3{width:64.833% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_3_4,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_4{width:73.625% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_2_5,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_5{width:36.7% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_3_5,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_5{width:57.8% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_1_5,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_5{width:15.6% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters3>.et_pb_column.et_pb_column_1_6,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_6{width:12.083% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column{margin-right:8% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et-last-child,.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column:last-of-type,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et-last-child,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column:last-of-type{margin-right:0 !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_1_4,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_4{width:19% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_1_3,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_3{width:28% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_1_2,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_2{width:46% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_2_3,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_3{width:64% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_3_4,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_4{width:73% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_2_5,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_2_5{width:35.2% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_3_5,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_3_5{width:56.8% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_1_5,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_5{width:13.6% !important}.et_pb_section .et_pb_row.divi-stop-stacking-row.et_pb_gutters4>.et_pb_column.et_pb_column_1_6,.et_pb_gutters4 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column.et_pb_column_1_6{width:10% !important}.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column:last-of-type,.et_pb_gutters3 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column:last-of-type,.et_pb_gutters2 .et_pb_section .et_pb_row.divi-stop-stacking-row>.et_pb_column:last-of-type{margin-right:0 !important}}</style><style>.mobile_nav.closed .et_mobile_menu{display:none}</style><link rel="stylesheet" id="packed-google-fonts-css" href="google-fonts/cssb11d.css?family=Open+Sans%3A400%2C700%7COxygen%3A300%2Cregular%2C700%7CSource+Sans+Pro%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic&amp;display=swap#038;subsets=latin%2Clatin-ext&#038;ver=5.9.2" type="text/css" media="print" onload="this.media='all'">
+<style id="wp-block-library-inline-css" type="text/css">.menu li.et-hover>ul,.nav li.et-hover>ul{visibility:visible!important;opacity:1!important}.da11y-submenu-show{visibility:visible!important}.keyboard-outline{outline-style:solid!important;outline-width:2px!important;-webkit-transition:none!important;transition:none!important}a[role=tab].keyboard-outline,button:active.keyboard-outline,button:focus.keyboard-outline,input:active.keyboard-outline,input:focus.keyboard-outline{outline-offset:-5px}.et-search-form input:focus.keyboard-outline{padding-left:15px;padding-right:15px}.et_pb_tab{-webkit-animation:none!important;animation:none!important}.et_pb_scroll_top.et-visible:focus{outline-width:2px;outline-style:solid;outline-color:Highlight}@media (-webkit-min-device-pixel-ratio:0){.et_pb_scroll_top.et-visible:focus{outline-color:-webkit-focus-ring-color;outline-style:auto}}.et_pb_contact_form_label,.et_pb_search .screen-reader-text,.et_pb_social_media_follow_network_name,.widget_search .screen-reader-text{display:block!important}.da11y-screen-reader-text,.et_pb_contact_form_label,.et_pb_search .screen-reader-text,.et_pb_social_media_follow_network_name,.widget_search .screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden;text-shadow:none;text-transform:none;letter-spacing:normal;line-height:normal;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1em;font-weight:600;-webkit-font-smoothing:subpixel-antialiased}.da11y-screen-reader-text:focus{background:#f1f1f1;color:#00547a;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.6);box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;display:block;height:auto;left:5px;padding:15px 23px 14px;text-decoration:none;top:7px;width:auto;z-index:1000000}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0"><link rel="https://api.w.org/" href="wp-json/index.html"><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/4.json"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml">
+<link rel="shortlink" href="index.html">
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed370f.json?url=https%3A%2F%2Fwww.injurymedmal.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed6358?url=https%3A%2F%2Fwww.injurymedmal.com%2F&amp;format=xml">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css"> 		
+	</style> <style type="text/css" id="et-social-custom-css">
+				 
+			</style>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","amnn8usjfj");</script>
+<link rel="icon" href="wp-content/uploads/sites/1402039/2021/04/cropped-site-icon-32x32.jpg" sizes="32x32">
+<link rel="icon" href="wp-content/uploads/sites/1402039/2021/04/cropped-site-icon-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="wp-content/uploads/sites/1402039/2021/04/cropped-site-icon-180x180.jpg">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/sites/1402039/2021/04/cropped-site-icon-270x270.jpg">
+<style id="jch-optimize-critical-css">@supports (-webkit-overflow-scrolling:touch){}@supports (position:sticky){}@media all{h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){}@media all{ol,ul{overflow-wrap:break-word}}@media all{p{overflow-wrap:break-word}}@supports (position:sticky){}@media all{:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}html:where(img){height:auto;max-width:100%}}body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#fff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale:url('index.html#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:url('index.html#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow:url('index.html#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:url('index.html#wp-duotone-blue-red');--wp--preset--duotone--midnight:url('index.html#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:url('index.html#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:url('index.html#wp-duotone-purple-green');--wp--preset--duotone--blue-orange:url('index.html#wp-duotone-blue-orange');--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px}@media all{.swiper-container{margin:0 auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-box-sizing:content-box;box-sizing:content-box}.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.swiper-slide{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:100%;height:100%;position:relative;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform,-webkit-transform}}@media all{.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}}@media all{.ninja-forms-noscript-message{background:#f1f1f1;border:4px dashed #ccc;color:#333;display:block;font-size:20px;margin:20px 0;padding:40px;text-align:center}}@media all{.nf-loading-spinner{width:40px;height:40px;margin:100px auto;background-color:hsla(0,0%,81.6%,.5);border-radius:100%;-webkit-animation:nf-scaleout 1s ease-in-out infinite;animation:nf-scaleout 1s ease-in-out infinite}}@media all{a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}blockquote{margin:20px 0 30px;border-left:5px solid;padding-left:20px}del{text-decoration:line-through}pre{overflow:auto;padding:10px}table{border-collapse:collapse;border-spacing:0}article,aside,footer,header,hgroup,nav,section{display:block}body{font-family:Open Sans,Arial,sans-serif;font-size:14px;color:#666;background-color:#fff;line-height:1.7em;font-weight:500;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body.et_cover_background{background-size:cover!important;background-position:top!important;background-repeat:no-repeat!important;background-attachment:fixed}a{color:#2ea3f2}a,a:hover{text-decoration:none}p{padding-bottom:1em}p:not(.has-background):last-of-type{padding-bottom:0}strong{font-weight:700}cite,em,i{font-style:italic}code,pre{font-family:Courier New,monospace;margin-bottom:10px}ins{text-decoration:none}sub,sup{height:0;line-height:1;position:relative;vertical-align:baseline}sup{bottom:.8em}sub{top:.3em}dl{margin:0 0 1.5em}dd{margin-left:1.5em}embed,iframe,object,video{max-width:100%}h1,h2,h3,h4,h5,h6{color:#333;padding-bottom:10px;line-height:1em;font-weight:500}h1{font-size:30px}h2{font-size:26px}h3{font-size:22px}h4{font-size:18px}h5{font-size:16px}h6{font-size:14px}img{max-width:100%;height:auto}.clear{clear:both}.et-search-form,blockquote{border-color:#2ea3f2}#main-content{background-color:#fff}.et_button_no_icon .et_pb_button:after{display:none}.et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button,.et_button_no_icon.et_button_left .et_pb_button:hover,.et_button_no_icon .et_pb_button,.et_button_no_icon .et_pb_button:hover{padding:.3em 1em!important}#left-area ul,.entry-content ul,.et-l--body ul,.et-l--footer ul,.et-l--header ul{list-style-type:disc;padding:0 0 23px 1em;line-height:26px}.page.et_pb_pagebuilder_layout #main-content{background-color:transparent}}@media all and (min-width:981px){#left-area{width:79.125%;padding-bottom:23px}}@media all and (max-width:980px){#page-container{padding-top:80px}.et-tb #page-container,.et-tb-has-header #page-container{padding-top:0!important}#left-area,#sidebar{width:100%!important}}@media print{#page-container{padding-top:0!important}}@media all{* html .clearfix,:first-child+html .clearfix{zoom:1}.et-social-facebook a.icon:before{content:"\e093"}.et-social-twitter a.icon:before{content:"\e094"}*{-webkit-box-sizing:border-box;box-sizing:border-box}#et-info-email:before,#et-info-phone:before,#et_search_icon:before,.comment-reply-link:after,.et-cart-info span:before,.et-pb-arrow-next:before,.et-pb-arrow-prev:before,.et-social-icon a:before,.et_audio_container .mejs-playpause-button button:before,.et_audio_container .mejs-volume-button button:before,.et_overlay:before,.et_password_protected_form .et_submit_button:after,.et_pb_button:after,.et_pb_contact_reset:after,.et_pb_contact_submit:after,.et_pb_font_icon:before,.et_pb_newsletter_button:after,.et_pb_pricing_table_button:after,.et_pb_promo_button:after,.et_pb_testimonial:before,.et_pb_toggle_title:before,.form-submit .et_pb_button:after,.mobile_menu_bar:before,a.et_pb_more_button:after{font-family:ETmodules!important;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-shadow:0 0;direction:ltr}.et-pb-icon,.et_pb_custom_button_icon.et_pb_button:after,.et_pb_login .et_pb_custom_button_icon.et_pb_button:after,.et_pb_woo_custom_button_icon .button.et_pb_custom_button_icon.et_pb_button:after,.et_pb_woo_custom_button_icon .button.et_pb_custom_button_icon.et_pb_button:hover:after{content:attr(data-icon)}.et-pb-icon{font-family:ETmodules;speak:none;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;font-size:96px;font-style:normal;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;direction:ltr}.et_pb_button{font-size:20px;font-weight:500;padding:.3em 1em;line-height:1.7em!important;background-color:transparent;background-size:cover;background-position:50%;background-repeat:no-repeat;border:2px solid;border-radius:3px;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-property:all!important;transition-property:all!important}.et_pb_button,.et_pb_button_inner{position:relative}.et_pb_button:hover,.et_pb_module .et_pb_button:hover{border:2px solid transparent;padding:.3em 2em .3em .7em}.et_pb_button:hover{background-color:hsla(0,0%,100%,.2)}.et_pb_bg_layout_light.et_pb_button:hover,.et_pb_bg_layout_light .et_pb_button:hover{background-color:rgba(0,0,0,.05)}.et_pb_button:after,.et_pb_button:before{font-size:32px;line-height:1em;content:"\35";opacity:0;position:absolute;margin-left:-1em;-webkit-transition:all .2s;transition:all .2s;text-transform:none;-webkit-font-feature-settings:"kern" off;font-feature-settings:"kern" off;font-variant:none;font-style:normal;font-weight:400;text-shadow:none}.et_pb_button:before{display:none}.et_pb_button:hover:after{opacity:1;margin-left:0}.et_pb_bg_layout_dark,.et_pb_bg_layout_dark h1,.et_pb_bg_layout_dark h2,.et_pb_bg_layout_dark h3,.et_pb_bg_layout_dark h4,.et_pb_bg_layout_dark h5,.et_pb_bg_layout_dark h6{color:#fff!important}.et_pb_module.et_pb_text_align_left{text-align:left}.et_pb_module.et_pb_text_align_center{text-align:center}.et_pb_module.et_pb_text_align_right{text-align:right}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.et_builder_inner_content{position:relative;z-index:1}header .et_builder_inner_content{z-index:2}.et_pb_css_mix_blend_mode_passthrough{mix-blend-mode:unset!important}.et_pb_module_inner{position:relative}.et_pb_all_tabs,.et_pb_module,.et_pb_posts_nav a,.et_pb_tab,.et_pb_with_background{background-size:cover;background-position:50%;background-repeat:no-repeat}.et_pb_with_border{position:relative;border:0 solid #333}.et_pb_more_button{color:inherit;text-shadow:none;text-decoration:none;display:inline-block;margin-top:20px}.et_pb_more_button:hover:after{opacity:1;margin-left:0}.et_clickable{cursor:pointer}header.et-l.et-l--header:after{clear:both;display:block;content:""}.et_pb_module{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-duration:.2s;animation-duration:.2s}.et-waypoint:not(.et_pb_counters){opacity:0}}@media all and (min-width:981px){.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module.et-last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module:last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module.et-last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module:last-child,.et_pb_section div.et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_pb_section div.et_pb_row .et_pb_column .et_pb_module:last-child{margin-bottom:0}}@media all and (max-width:980px){.et_pb_column .et_pb_module{margin-bottom:30px}.et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_pb_row .et_pb_column .et_pb_module:last-child,.et_section_specialty .et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_section_specialty .et_pb_row .et_pb_column .et_pb_module:last-child{margin-bottom:0}.et_pb_more_button{display:inline-block!important}.et_pb_module.et_pb_text_align_center-tablet{text-align:center}}@media all and (max-width:767px){.et_pb_more_button{display:inline-block!important}}@media all and (max-width:479px){a.et_pb_more_button{display:block}}@media all{.et_animated{opacity:0;animation-duration:1s;animation-fill-mode:both!important}.et_overlay{z-index:-1;position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:hsla(0,0%,100%,.9);opacity:0;pointer-events:none;transition:all .3s;border:1px solid #e5e5e5;box-sizing:border-box;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-font-smoothing:antialiased}.et_overlay:before{color:#2ea3f2;content:"\E050";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:32px;transition:all .4s}}@media all{.et_pb_blurb_content{max-width:550px;margin:0 auto;position:relative;text-align:center;word-wrap:break-word;width:100%}.et_pb_blurb.et_pb_text_align_left .et_pb_blurb_content .et_pb_blurb_container{text-align:left}.et_pb_blurb_content p:last-of-type{padding-bottom:0}.et_pb_blurb .et_pb_image_wrap{display:block;margin:auto}.et_pb_blurb_position_left .et_pb_blurb_content,.et_pb_blurb_position_right .et_pb_blurb_content{display:table}.et_pb_blurb_position_left .et_pb_main_blurb_image,.et_pb_blurb_position_right .et_pb_main_blurb_image{width:32px;display:table-cell;line-height:0}.et_pb_blurb_position_left .et-pb-icon,.et_pb_blurb_position_right .et-pb-icon{font-size:32px}.et_pb_blurb_position_right .et-pb-icon{display:table-cell}.et_pb_blurb_position_left .et_pb_blurb_container,.et_pb_blurb_position_right .et_pb_blurb_container{display:table-cell;vertical-align:top}.et_pb_blurb_position_left .et_pb_blurb_container{padding-left:15px}.et_pb_blurb_position_left .et_pb_blurb_content{text-align:left}.et_pb_blurb_position_right .et_pb_blurb_container{padding-right:15px}.et_pb_blurb_position_right .et_pb_blurb_content{text-align:right}.et_pb_blurb_position_right .et_pb_main_blurb_image{left:auto;right:0}.et_pb_blurb_position_right .et-pb-icon{margin-right:0;margin-left:20px}.et_pb_main_blurb_image{display:inline-block;margin-bottom:30px;line-height:0;max-width:100%}}@media all and (min-width:981px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column{margin-right:0}.et_pb_gutters1 .et_pb_column_4_4,.et_pb_gutters1.et_pb_row .et_pb_column_4_4{width:100%}.et_pb_gutters1 .et_pb_column_4_4 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_4_4 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_2_3,.et_pb_gutters1.et_pb_row .et_pb_column_2_3{width:66.667%}.et_pb_gutters1 .et_pb_column_3_5,.et_pb_gutters1.et_pb_row .et_pb_column_3_5{width:60%}.et_pb_gutters1 .et_pb_column_3_5 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_3_5 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_2,.et_pb_gutters1.et_pb_row .et_pb_column_1_2{width:50%}.et_pb_gutters1 .et_pb_column_1_2 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_2 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_2_5,.et_pb_gutters1.et_pb_row .et_pb_column_2_5{width:40%}.et_pb_gutters1 .et_pb_column_2_5 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_2_5 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_3,.et_pb_gutters1.et_pb_row .et_pb_column_1_3{width:33.3333%}.et_pb_gutters1 .et_pb_column_1_3 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_3 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_4,.et_pb_gutters1.et_pb_row .et_pb_column_1_4{width:25%}.et_pb_gutters1 .et_pb_column_1_4 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_4 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_5,.et_pb_gutters1.et_pb_row .et_pb_column_1_5{width:20%}.et_pb_gutters1 .et_pb_column_1_5 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_5 .et_pb_module{margin-bottom:0}}@media all and (max-width:980px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1 .et_pb_column .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module{margin-bottom:0}}@media all and (max-width:767px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1 .et_pb_column .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module{margin-bottom:0}}@media all and (max-width:479px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column{margin:0!important}.et_pb_gutters1 .et_pb_column .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module{margin-bottom:0}}@media all{.et_animated{opacity:0;animation-duration:1s;animation-fill-mode:both!important}.et_pb_blurb_content{max-width:550px;margin:0 auto;position:relative;text-align:center;word-wrap:break-word;width:100%}.et_pb_blurb.et_pb_text_align_left .et_pb_blurb_content .et_pb_blurb_container{text-align:left}.et_pb_blurb_content p:last-of-type{padding-bottom:0}.et_pb_blurb .et_pb_image_wrap{display:block;margin:auto}.et_pb_blurb_position_left .et_pb_blurb_content,.et_pb_blurb_position_right .et_pb_blurb_content{display:table}.et_pb_blurb_position_left .et_pb_main_blurb_image,.et_pb_blurb_position_right .et_pb_main_blurb_image{width:32px;display:table-cell;line-height:0}.et_pb_blurb_position_left .et-pb-icon,.et_pb_blurb_position_right .et-pb-icon{font-size:32px}.et_pb_blurb_position_right .et-pb-icon{display:table-cell}.et_pb_blurb_position_left .et_pb_blurb_container,.et_pb_blurb_position_right .et_pb_blurb_container{display:table-cell;vertical-align:top}.et_pb_blurb_position_left .et_pb_blurb_container{padding-left:15px}.et_pb_blurb_position_left .et_pb_blurb_content{text-align:left}.et_pb_blurb_position_right .et_pb_blurb_container{padding-right:15px}.et_pb_blurb_position_right .et_pb_blurb_content{text-align:right}.et_pb_blurb_position_right .et_pb_main_blurb_image{left:auto;right:0}.et_pb_blurb_position_right .et-pb-icon{margin-right:0;margin-left:20px}.et_pb_main_blurb_image{display:inline-block;margin-bottom:30px;line-height:0;max-width:100%}}@media all{.et_pb_section{position:relative;background-color:#fff;background-position:50%;background-size:100%;background-size:cover}}@media all and (min-width:981px){.et_pb_section{padding:4% 0}}@media all and (max-width:980px){.et_pb_section{padding:50px 0}}@media all{.et_pb_row{width:80%;max-width:1080px;margin:auto;position:relative}.et_pb_row_inner{width:100%;position:relative}.et_pb_row:after,.et_pb_row_inner:after{content:"";display:block;clear:both;visibility:hidden;line-height:0;height:0;width:0}.et_pb_column{float:left;background-size:cover;background-position:50%;position:relative;z-index:2;min-height:1px}.et_pb_column--with-menu{z-index:3}.et_pb_column.et_pb_column_empty{min-height:1px}.et_pb_row .et_pb_column.et-last-child,.et_pb_row .et_pb_column:last-child,.et_pb_row_inner .et_pb_column.et-last-child,.et_pb_row_inner .et_pb_column:last-child{margin-right:0!important}.et_pb_column,.et_pb_row,.et_pb_row_inner{background-size:cover;background-position:50%;background-repeat:no-repeat}}@media all and (min-width:981px){.et_pb_row{padding:2% 0}.et_pb_row_inner{width:100%}.et_pb_row .et_pb_column.et-last-child,.et_pb_row .et_pb_column:last-child,.et_pb_row_inner .et_pb_column.et-last-child,.et_pb_row_inner .et_pb_column:last-child{margin-right:0!important}.et_pb_row.et_pb_equal_columns,.et_pb_row_inner.et_pb_equal_columns,.et_pb_section.et_pb_equal_columns>.et_pb_row{display:-ms-flexbox;display:flex;direction:ltr}.et_pb_row.et_pb_equal_columns>.et_pb_column,.et_pb_section.et_pb_equal_columns>.et_pb_row>.et_pb_column{-ms-flex-order:1;order:1}}@media all and (max-width:980px){.et_pb_row{max-width:1080px}.et_pb_column .et_pb_row_inner,.et_pb_row{padding:30px 0}.et_pb_column{width:100%;margin-bottom:30px}.et_pb_bottom_divider .et_pb_row:nth-last-child(2) .et_pb_column:last-child,.et_pb_row .et_pb_column.et-last-child,.et_pb_row .et_pb_column:last-child{margin-bottom:0}.et_pb_column.et_pb_column_empty{display:none}}@media all and (max-width:479px){.et_pb_row .et_pb_column.et_pb_column_1_4,.et_pb_row .et_pb_column.et_pb_column_1_5,.et_pb_row .et_pb_column.et_pb_column_1_6{width:100%;margin:0 0 30px}.et_pb_row .et_pb_column.et_pb_column_1_4.et-last-child,.et_pb_row .et_pb_column.et_pb_column_1_4:last-child,.et_pb_row .et_pb_column.et_pb_column_1_5.et-last-child,.et_pb_row .et_pb_column.et_pb_column_1_5:last-child,.et_pb_row .et_pb_column.et_pb_column_1_6.et-last-child,.et_pb_row .et_pb_column.et_pb_column_1_6:last-child{margin-bottom:0}.et_pb_column{width:100%!important}}@media all{.et_pb_button_module_wrapper.et_pb_button_alignment_right{text-align:right}.et_pb_button_module_wrapper.et_pb_button_alignment_center{text-align:center}.et_pb_button_module_wrapper>a{display:inline-block}}@media all{.et_pb_button[data-icon]:not([data-icon=""]):after{content:attr(data-icon)}}@media all{.et_pb_code_inner{position:relative}.et_pb_image{margin-left:auto;margin-right:auto;line-height:0}.et_pb_image{display:block}.et_pb_image .et_pb_image_wrap{display:inline-block;position:relative;max-width:100%}.et_pb_image img{position:relative}}@media all{.et_overlay{z-index:-1;position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:hsla(0,0%,100%,.9);opacity:0;pointer-events:none;transition:all .3s;border:1px solid #e5e5e5;box-sizing:border-box;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-font-smoothing:antialiased}.et_overlay:before{color:#2ea3f2;content:"\E050";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:32px;transition:all .4s}.et-menu li{display:inline-block;font-size:14px;padding-right:22px}.et-menu>li:last-child{padding-right:0}.et-menu a{color:rgba(0,0,0,.6);text-decoration:none;display:block;position:relative}.et-menu a,.et-menu a:hover{transition:all .4s ease-in-out}.et-menu a:hover{opacity:.7}.et-menu li>a{padding-bottom:29px;word-wrap:break-word}.et_pb_menu__wrap .mobile_menu_bar{transform:translateY(3%)}.et_pb_menu__wrap .mobile_menu_bar:before{top:0}}@media all and (max-width:980px){.et-menu{display:none}.et_mobile_nav_menu{display:block;margin-top:-1px}}@media all{.et_pb_menu .et-menu-nav,.et_pb_menu .et-menu-nav>ul{float:none}.et_pb_menu .et-menu-nav>ul{padding:0!important;line-height:1.7em}.et_pb_menu .et-menu-nav>ul ul{padding:20px 0;text-align:left}.et_pb_menu_inner_container{position:relative}.et_pb_menu .et_pb_menu__wrap{-ms-flex:1 1 auto;flex:1 1 auto;display:-ms-flexbox;display:flex;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:wrap;flex-wrap:wrap;opacity:1}.et_pb_menu .et_pb_menu__menu{-ms-flex:0 1 auto;flex:0 1 auto;-ms-flex-pack:start;justify-content:flex-start}.et_pb_menu .et_pb_menu__menu,.et_pb_menu .et_pb_menu__menu>nav,.et_pb_menu .et_pb_menu__menu>nav>ul{display:-ms-flexbox;display:flex;-ms-flex-align:stretch;align-items:stretch}.et_pb_menu .et_pb_menu__menu>nav>ul{-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:start;justify-content:flex-start}.et_pb_menu .et_pb_menu__menu>nav>ul>li{position:relative;display:-ms-flexbox;display:flex;-ms-flex-align:stretch;align-items:stretch;margin:0}.et_pb_menu .et_pb_menu__menu>nav>ul>li>ul{top:calc(100% - 1px);left:0}.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul{padding:0!important}.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li{margin-top:8px}.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li>a{padding-bottom:8px}.et_pb_menu .et-menu{margin-left:-11px;margin-right:-11px}.et_pb_menu .et-menu>li{padding-left:11px;padding-right:11px}.et_pb_menu--style-left_aligned .et_pb_menu_inner_container,.et_pb_menu--style-left_aligned .et_pb_row{display:-ms-flexbox;display:flex;-ms-flex-align:stretch;align-items:stretch}.et_pb_menu--style-left_aligned.et_pb_text_align_center .et_pb_menu__menu>nav>ul,.et_pb_menu--style-left_aligned.et_pb_text_align_center .et_pb_menu__wrap{-ms-flex-pack:center;justify-content:center}.et_pb_menu--style-centered .et_pb_menu__menu>nav>ul,.et_pb_menu--style-centered .et_pb_menu__wrap{-ms-flex-pack:center;justify-content:center}}@media all and (min-width:981px){.et_dropdown_animation_fade.et_pb_menu ul li:hover>ul{transition:all .2s ease-in-out}.et_dropdown_animation_slide.et_pb_menu ul li:hover>ul{animation:fadeLeft .4s ease-in-out}}@media all and (max-width:980px){.et_pb_menu--style-left_aligned .et_pb_menu_inner_container,.et_pb_menu--style-left_aligned .et_pb_row{-ms-flex-align:center;align-items:center}.et_pb_menu--style-left_aligned .et_pb_menu__wrap{-ms-flex-pack:end;justify-content:flex-end}.et_pb_menu--style-left_aligned.et_pb_text_align_center .et_pb_menu__wrap{-ms-flex-pack:center;justify-content:center}.et_pb_menu .et_pb_menu__menu{display:none}.et_pb_menu .et_mobile_nav_menu{float:none;margin:0 6px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}}@media all{.nav li li{padding:0 20px;margin:0}.et-menu li li a{padding:6px 20px;width:200px}.nav li{position:relative;line-height:1em}.nav li li{position:relative;line-height:2em}.nav li ul{position:absolute;padding:20px 0;z-index:9999;width:240px;background:#fff;visibility:hidden;opacity:0;border-top:3px solid #2ea3f2;box-shadow:0 2px 5px rgba(0,0,0,.1);-moz-box-shadow:0 2px 5px rgba(0,0,0,.1);-webkit-box-shadow:0 2px 5px rgba(0,0,0,.1);-webkit-transform:translateZ(0);text-align:left}.nav li.et-touch-hover>ul,.nav li:hover>ul{opacity:1;visibility:visible}.nav li:hover{visibility:inherit}.et_mobile_menu li a,.nav li li a{font-size:14px;transition:all .2s ease-in-out}.et_mobile_menu li a:hover,.nav ul li a:hover{background-color:rgba(0,0,0,.03);opacity:.7}.et-menu .menu-item-has-children>a:first-child:after{font-family:ETmodules;content:"3";font-size:16px;position:absolute;right:0;top:0;font-weight:800}.et-menu .menu-item-has-children>a:first-child{padding-right:20px}.et_mobile_menu{position:absolute;left:0;padding:5%;background:#fff;width:100%;visibility:visible;opacity:1;display:none;z-index:9999;border-top:3px solid #2ea3f2;box-shadow:0 2px 5px rgba(0,0,0,.1);-moz-box-shadow:0 2px 5px rgba(0,0,0,.1);-webkit-box-shadow:0 2px 5px rgba(0,0,0,.1)}.et_mobile_menu li a{border-bottom:1px solid rgba(0,0,0,.03);color:#666;padding:10px 5%;display:block}.et_mobile_nav_menu{float:right;display:none}.mobile_menu_bar{position:relative;display:block;line-height:0}.mobile_menu_bar:before{content:"a";font-size:32px;position:relative;left:0;top:0;cursor:pointer}.et_pb_module .mobile_menu_bar:before{top:2px}ul.et_pb_social_media_follow{list-style-type:none!important;margin:0 0 22px;padding:0}.et_pb_social_media_follow li{display:inline-block;margin-bottom:8px;position:relative}.et_pb_social_media_follow li a{margin-right:8px;display:inline-block;text-decoration:none;text-align:center;position:relative}.et_pb_social_media_follow li.last-child a,.et_pb_social_media_follow li:last-child a{margin-right:0}.et_pb_social_media_follow li a.icon{height:32px;width:32px;padding:0;box-sizing:content-box}.et_pb_social_media_follow li a.icon:before{height:32px;width:32px;font-size:16px;line-height:32px;display:block;color:#fff;transition:color .3s;position:relative;z-index:10}.et_pb_social_media_follow li a.icon:hover:before{color:hsla(0,0%,100%,.7)}.et_pb_social_media_follow li a.icon{border-radius:3px}.et_pb_social_media_follow_network_name{display:none}.et_pb_social_icon a.icon{vertical-align:middle}.et_pb_social_icon a.icon:before{font-family:ETmodules;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-shadow:0 0;direction:ltr}.et-social-linkedin a.icon:before{content:"\E09D"}}@media all{.et_pb_text{word-wrap:break-word}.et_pb_text>:last-child{padding-bottom:0}.et_pb_text_inner{position:relative}}@media all{.et_pb_blurb_extended .et_pb_blurb_content{padding:20px;background-repeat:no-repeat;background-position:50%;background-size:cover}.et_pb_blurb_extended.et_pb_text_align_left .et_pb_blurb_content{text-align:left}.et_pb_blurb_extended .et-pb-icon,.et_pb_blurb_extended .et_pb_blurb_container,.et_pb_blurb_extended .et_pb_blurb_content,.et_pb_blurb_extended .et_pb_module_header,.et_pb_blurb_extended .hexagon{-webkit-transition:all .3s ease-in;-o-transition:all .3s ease-in;transition:all .3s ease-in}.et_pb_blurb_extended .et-pb-icon{font-size:32px}}@media all{to{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}}@media all{.dica-container .swiper-container{width:100%;height:auto;display:-ms-flexbox;display:flex}.dica-container .swiper-wrapper{height:auto!important;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-transition-duration:2s;-o-transition-duration:2s;transition-duration:2s;-webkit-transition-property:-webkit-transform!important;transition-property:-webkit-transform!important;-o-transition-property:transform!important;transition-property:transform!important;transition-property:transform,-webkit-transform!important;-webkit-box-sizing:content-box!important;box-sizing:content-box!important}.dica_divi_carousel .dica_divi_carouselitem{font-size:14px;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;margin-bottom:0!important;-ms-flex-item-align:start;align-self:flex-start}:root .dica_divi_carousel .dica_divi_carouselitem .et_pb_module_inner,_:-ms-fullscreen{-ms-flex:1 1;flex:1 1}.dica_divi_carouselitem{-ms-flex-negative:0;flex-shrink:0;width:100%;position:relative}.dica_divi_carouselitem>div{background-position:50%;background-repeat:no-repeat;background-size:cover;border-style:solid;border-width:0}.dica_divi_carouselitem>div{width:100%;-ms-flex-positive:1;flex-grow:1}.dica_divi_carousel .dica_divi_carouselitem .dica-item-content .content{font-size:14px;letter-spacing:0}.dica_divi_carousel .dica_divi_carouselitem .dica-item-content{font-size:14px;z-index:9;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}.dica_divi_carouselitem .dica-item-content{background-repeat:no-repeat;background-size:cover;background-position:50%}#et-boc .dica_divi_carousel .dica_divi_carouselitem .dica-image-container .image{padding-bottom:0}.dica_divi_carousel .dica_divi_carouselitem .dica-image-container{position:relative;overflow:hidden;line-height:0}#et-boc .dica_divi_carousel .dica_divi_carouselitem .dica-image-container img,.dica_divi_carousel .dica_divi_carouselitem .dica-image-container img{border-style:solid;display:block;max-width:100%;border-width:0;position:relative}.dica_divi_carousel .dica_divi_carouselitem .dica-image-container .image{display:inline-block;position:relative;overflow:hidden;z-index:10}.dica_divi_carousel .dica_divi_carouselitem .dica-image-container{z-index:10}#et-boc .dica_divi_carousel .dica_divi_carouselitem,#et-boc .dica_divi_carousel .dica_divi_carouselitem>div,.dica_divi_carousel .dica_divi_carouselitem,.dica_divi_carousel .dica_divi_carouselitem>div{border-style:solid;border-width:0}.dica_divi_carousel .dica_divi_carouselitem .dica-item{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100%;-ms-flex-negative:0;flex-shrink:0}.et_pb_button{display:inline-block}.dica-container{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}}@media all{#page-container{overflow-y:visible!important}}@media all{html{touch-action:manipulation}.et_pb_text_align_right{text-align:right}.et_pb_text_align_center{text-align:center}.et_pb_text_align_left{text-align:left}.fl-mobile-menu .et_pb_menu__wrap{margin:0 -11px}}body,.et_pb_column_1_2 .et_quote_content blockquote cite,.et_pb_column_1_2 .et_link_content a.et_link_main_url,.et_pb_column_1_3 .et_quote_content blockquote cite,.et_pb_column_3_8 .et_quote_content blockquote cite,.et_pb_column_1_4 .et_quote_content blockquote cite,.et_pb_blog_grid .et_quote_content blockquote cite,.et_pb_column_1_3 .et_link_content a.et_link_main_url,.et_pb_column_3_8 .et_link_content a.et_link_main_url,.et_pb_column_1_4 .et_link_content a.et_link_main_url,.et_pb_blog_grid .et_link_content a.et_link_main_url,body .et_pb_bg_layout_light .et_pb_post p,body .et_pb_bg_layout_dark .et_pb_post p{font-size:17px}body{color:#000}h1,h2,h3,h4,h5,h6{color:#000}body{line-height:1.8em}#et_search_icon:hover,.mobile_menu_bar:before,.mobile_menu_bar:after,.et_toggle_slide_menu:after,.et-social-icon a:hover,.et_pb_sum,.et_pb_pricing li a,.et_pb_pricing_table_button,.et_overlay:before,.entry-summary p.price ins,.et_pb_member_social_links a:hover,.et_pb_widget li a:hover,.et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active,.et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active,.et_pb_gallery .et_pb_gallery_pagination ul li a.active,.wp-pagenavi span.current,.wp-pagenavi a:hover,.nav-single a,.tagged_as a,.posted_in a{color:#0099c4}.et_pb_contact_submit,.et_password_protected_form .et_submit_button,.et_pb_bg_layout_light .et_pb_newsletter_button,.comment-reply-link,.form-submit .et_pb_button,.et_pb_bg_layout_light .et_pb_promo_button,.et_pb_bg_layout_light .et_pb_promo_button,,.et_pb_contact p input[type="checkbox"]:checked+label i:before,.et_pb_bg_layout_light.et_pb_module.et_pb_button{color:#0099c4}.et-search-form,.nav li ul,.et_mobile_menu,.footer-widget li:before,.et_pb_pricing li:before,blockquote{border-color:#0099c4}.et_pb_counter_amount,.et_pb_featured_table .et_pb_pricing_heading,.et_quote_content,.et_link_content,.et_audio_content,.et_pb_post_slider.et_pb_bg_layout_dark,.et_slide_in_menu_container,.et_pb_contact p input[type="radio"]:checked+label i:before{background-color:#0099c4}.container,.et_pb_row,.et_pb_slider .et_pb_container,.et_pb_fullwidth_section .et_pb_title_container,.et_pb_fullwidth_section .et_pb_title_featured_container,.et_pb_fullwidth_header:not(.et_pb_fullscreen) .et_pb_fullwidth_header_container{max-width:1180px}a{color:#0099c4}.footer-widget li:before{border-color:#0099c4}body .et_pb_button{background-color:#8ea06d;border-color:#8ea06d}body.et_pb_button_helper_class .et_pb_button,body.et_pb_button_helper_class .et_pb_module.et_pb_button{color:#000}body .et_pb_bg_layout_light.et_pb_button:hover,body .et_pb_bg_layout_light .et_pb_button:hover,body .et_pb_button:hover{color:#000000!important;background-color:#9fc35c;border-color:#9fc35c!important;border-radius:0px}h1,h2,h3,h4,h5,h6,.et_quote_content blockquote p,.et_pb_slide_description .et_pb_slide_title{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none;line-height:1.3em}@media only screen and (min-width:981px){.et_pb_section{padding:0% 0}.et_pb_fullwidth_section{padding:0}.et_pb_row{padding:0% 0}}@media only screen and (min-width:1475px){.et_pb_row{padding:0px 0}.et_pb_section{padding:0px 0}.et_pb_fullwidth_section{padding:0}}h1,h1.et_pb_contact_main_title,.et_pb_title_container h1{font-size:40px}h2,.product .related h2,.et_pb_column_1_2 .et_quote_content blockquote p{font-size:34px}h3{font-size:29px}h4,.et_pb_circle_counter h3,.et_pb_number_counter h3,.et_pb_column_1_3 .et_pb_post h2,.et_pb_column_1_4 .et_pb_post h2,.et_pb_blog_grid h2,.et_pb_column_1_3 .et_quote_content blockquote p,.et_pb_column_3_8 .et_quote_content blockquote p,.et_pb_column_1_4 .et_quote_content blockquote p,.et_pb_blog_grid .et_quote_content blockquote p,.et_pb_column_1_3 .et_link_content h2,.et_pb_column_3_8 .et_link_content h2,.et_pb_column_1_4 .et_link_content h2,.et_pb_blog_grid .et_link_content h2,.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_3_8 .et_audio_content h2,.et_pb_column_1_4 .et_audio_content h2,.et_pb_blog_grid .et_audio_content h2,.et_pb_column_3_8 .et_pb_audio_module_content h2,.et_pb_column_1_3 .et_pb_audio_module_content h2,.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2{font-size:24px}h5{font-size:21px}h6{font-size:18px}.et_pb_slide_description .et_pb_slide_title{font-size:61px}.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2,.et_pb_column_1_4 .et_pb_audio_module_content h2{font-size:21px}@media only screen and (max-width:980px){h1{font-size:25px}h2,.product .related h2,.et_pb_column_1_2 .et_quote_content blockquote p{font-size:21px}h3{font-size:18px}h4,.et_pb_circle_counter h3,.et_pb_number_counter h3,.et_pb_column_1_3 .et_pb_post h2,.et_pb_column_1_4 .et_pb_post h2,.et_pb_blog_grid h2,.et_pb_column_1_3 .et_quote_content blockquote p,.et_pb_column_3_8 .et_quote_content blockquote p,.et_pb_column_1_4 .et_quote_content blockquote p,.et_pb_blog_grid .et_quote_content blockquote p,.et_pb_column_1_3 .et_link_content h2,.et_pb_column_3_8 .et_link_content h2,.et_pb_column_1_4 .et_link_content h2,.et_pb_blog_grid .et_link_content h2,.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_3_8 .et_audio_content h2,.et_pb_column_1_4 .et_audio_content h2,.et_pb_blog_grid .et_audio_content h2,.et_pb_column_3_8 .et_pb_audio_module_content h2,.et_pb_column_1_3 .et_pb_audio_module_content h2,.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2{font-size:15px}.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2,.et_pb_column_1_4 .et_pb_audio_module_content h2{font-size:13px}h5{font-size:13px}h6{font-size:11px}.et_pb_section{padding:0px 0}.et_pb_row,.et_pb_column .et_pb_row_inner{padding:0px 0}}h1,h2,h3,h4,h5,h6{font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif}body,input,textarea,select{font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif}.et_pb_section_0_tb_header{z-index:8;position:relative}.et_pb_section_0_tb_header.et_pb_section,.et_pb_menu_3_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_3_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#ffffff!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:15px!important;padding-bottom:15px!important;padding-top:15px;padding-bottom:15px}.et_pb_image_0_tb_header{text-align:left;margin-left:0}.et_pb_text_0_tb_header.et_pb_text,.et_pb_text_0_tb_header.et_pb_text a:hover{color:#333333!important}.et_pb_text_0_tb_header{line-height:1em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;line-height:1em}.et_pb_text_0_tb_header.et_pb_text a{color:#444d34!important;transition:color 300ms ease 0ms}.et_pb_text_0_tb_header a{font-size:24px;line-height:1.01em}.et_pb_section_1_tb_header.et_pb_section{padding-right:10px;padding-bottom:10px;padding-left:10px}.et_pb_text_1_tb_header.et_pb_text{color:#5d7c00!important}.et_pb_text_2_tb_header a,.et_pb_text_1_tb_header{font-weight:700}.et_pb_section_2_tb_header.et_pb_section{padding-top:5px;padding-bottom:5px;background-color:#333333!important}.et_pb_section_2_tb_header{z-index:999;position:relative}.et_pb_row_2_tb_header,.et_pb_menu_2_tb_header.et_pb_menu,.et_pb_menu_0_tb_header.et_pb_menu{background-color:rgba(0,0,0,0)}.et_pb_row_2_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_2_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2_tb_header.et_pb_row{width:100%}.et_pb_menu_2_tb_header.et_pb_menu ul li a,.et_pb_menu_1_tb_header.et_pb_menu ul li a,.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;text-transform:uppercase;font-size:15px;color:#eeeeee!important;line-height:2em;transition:color 300ms ease 0ms}.et_pb_menu_2_tb_header.et_pb_menu ul li:hover>a,.et_pb_menu_1_tb_header.et_pb_menu ul li:hover>a,.et_pb_menu_0_tb_header.et_pb_menu ul li:hover>a,.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a,.et_pb_menu_1_tb_header.et_pb_menu .nav li ul.sub-menu a,.et_pb_menu_2_tb_header.et_pb_menu .nav li ul.sub-menu a{color:#9fc35c!important}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul,.et_pb_menu_1_tb_header.et_pb_menu .nav li ul,.et_pb_menu_2_tb_header.et_pb_menu .nav li ul{background-color:#ffffff!important;border-color:rgba(0,0,0,0)}.et_pb_menu_2_tb_header.et_pb_menu nav>ul>li>a:hover,.et_pb_menu_0_tb_header.et_pb_menu nav>ul>li>a:hover,.et_pb_menu_1_tb_header.et_pb_menu nav>ul>li>a:hover{opacity:1}.et_pb_menu_1_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_1_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_1_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_1_tb_header .et_pb_menu__icon.et_pb_menu__cart-button,.et_pb_menu_3_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_3_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_2_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_2_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_2_tb_header .et_pb_menu__icon.et_pb_menu__cart-button,.et_pb_menu_2_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_3_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#0099c4}.et_pb_text_2_tb_header.et_pb_text a,.et_pb_menu_3_tb_header.et_pb_menu .et_mobile_menu a:hover{color:#444d34!important}.et_pb_text_2_tb_header{padding-top:10px!important;padding-bottom:10px!important}.et_pb_row_4_tb_header,.et_pb_menu_1_tb_header.et_pb_menu{background-color:#333}.et_pb_row_5_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_5_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5_tb_header.et_pb_row,.et_pb_row_7_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_7_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_7_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_7_tb_header.et_pb_row,.et_pb_row_4_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_4_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4_tb_header.et_pb_row{width:100%;max-width:100%}.et_pb_section_4_tb_header{z-index:10;box-shadow:0px 12px 20px -6px rgba(0,0,0,0.18)}.et_pb_row_5_tb_header{background-color:#221f1e}.et_pb_section_5_tb_header.et_pb_section{padding-top:5px;padding-bottom:0px;margin-bottom:0px}.et_pb_section_5_tb_header{z-index:500;position:relative}.et_pb_row_6_tb_header.et_pb_row,.et_pb_row_7_tb_header.et_pb_row{padding-top:0px!important;padding-bottom:0px!important;padding-top:0px;padding-bottom:0px}et_pb_image_1_tb_header .et_pb_image_wrap img{max-height:75px;}.et_pb_image_1_tb_header{margin-bottom:5px!important;text-align:center}.et_pb_row_7_tb_header{position:static!important;top:0px;right:auto;bottom:auto;left:0px}.et_pb_menu_3_tb_header.et_pb_menu ul li a{font-size:20px;color:#000000!important}.et_pb_menu_3_tb_header.et_pb_menu{background-color:#8ea06d}.et_pb_menu_3_tb_header.et_pb_menu:hover{background-image:initial;background-color:#8ea06d}.et_pb_menu_3_tb_header{padding-top:6px;padding-bottom:6px}.et_pb_menu_3_tb_header.et_pb_menu .nav li ul{background-color:#8ea06d!important;border-color:#8ea06d}.et_pb_menu_3_tb_header.et_pb_menu .et_mobile_menu{border-color:#8ea06d}.et_pb_menu_3_tb_header .mobile_nav .mobile_menu_bar:before{font-size:45px;color:#000}.et_pb_button_0_tb_header_wrapper .et_pb_button_0_tb_header,.et_pb_button_0_tb_header_wrapper .et_pb_button_0_tb_header:hover{padding-top:12px!important;padding-bottom:0px!important}body #page-container .et_pb_section .et_pb_button_0_tb_header{color:#0a0000!important;border-width:0px!important;border-radius:0px;font-size:20px;padding-right:0.7em!important;padding-left:2em!important;background-color:#dbdbdb}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover{color:#ffffff!important;background-image:initial;background-color:#3f3f3f}body #page-container .et_pb_section .et_pb_button_0_tb_header:after{display:none}body #page-container .et_pb_section .et_pb_button_0_tb_header:before{content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important;line-height:inherit;font-size:inherit!important;opacity:1;margin-left:-1.3em;right:auto;display:inline-block;font-family:ETmodules!important;font-weight:400!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_button_0_tb_header{transition:color 300ms ease 0ms,background-color 300ms ease 0ms}.et_pb_button_0_tb_header,.et_pb_button_0_tb_header:after{transition:all 300ms ease 0ms}.et_pb_text_3_tb_header.et_pb_text,.et_pb_text_3_tb_header.et_pb_text a{color:#ffffff!important}.et_pb_text_3_tb_header{line-height:57px;font-size:20px;line-height:57px;background-color:#444d34;position:relative}.et_pb_column_0_tb_header{padding-right:1.28%}@media only screen and (min-width:981px){.et_pb_section_5_tb_header{display:none!important}}@media only screen and (max-width:980px){.et_pb_image_0_tb_header{padding-top:0px;padding-bottom:0px;padding-left:0px;text-align:center;margin-left:auto;margin-right:auto}.et_pb_image_0_tb_header .et_pb_image_wrap img,et_pb_image_1_tb_header .et_pb_image_wrap img{}.et_pb_text_0_tb_header{font-size:15px}.et_pb_text_0_tb_header a{font-size:19px}.et_pb_menu_3_tb_header.et_pb_menu{background-image:initial}body #page-container .et_pb_section .et_pb_button_0_tb_header:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:after{display:none}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_column_0_tb_header{padding-right:0%}}@media only screen and (min-width:768px) and (max-width:980px){.et_pb_section_0_tb_header,.et_pb_text_0_tb_header,.et_pb_section_2_tb_header,.et_pb_menu_0_tb_header,.et_pb_menu_1_tb_header,.et_pb_section_4_tb_header{display:none!important}}@media only screen and (max-width:767px){.et_pb_section_0_tb_header,.et_pb_text_0_tb_header,.et_pb_section_2_tb_header,.et_pb_menu_0_tb_header,.et_pb_menu_1_tb_header,.et_pb_section_4_tb_header{display:none!important}.et_pb_image_0_tb_header .et_pb_image_wrap img,et_pb_image_1_tb_header .et_pb_image_wrap img{}.et_pb_menu_3_tb_header.et_pb_menu{background-image:initial}body #page-container .et_pb_section .et_pb_button_0_tb_header:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:after{display:none}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}}.et_pb_section_1_tb_footer.et_pb_section{padding-bottom:78px}.et_pb_row_1_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,.et_pb_row_4_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_4_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4_tb_footer.et_pb_row,.et_pb_row_2_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_2_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2_tb_footer.et_pb_row,.et_pb_row_3_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_3_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3_tb_footer.et_pb_row,.et_pb_row_0_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{width:100%}.et_pb_image_1_tb_footer,.et_pb_image_0_tb_footer{text-align:center}.et_pb_image_2_tb_footer{margin-top:0px!important;text-align:center}div.et_pb_section.et_pb_section_2_tb_footer{background-size:initial;background-position:top center;background-image:url(wp-content/uploads/sites/1402039/2021/12/bg-map-new.jpg)!important}.et_pb_section_2_tb_footer.et_pb_section{padding-top:240px}.et_pb_row_1_tb_footer{background-color:#444d34}.et_pb_row_1_tb_footer.et_pb_row{padding-top:40px!important;padding-top:40px}.et_pb_image_3_tb_footer{padding-bottom:30px;text-align:center}.et_pb_text_0_tb_footer h2,.et_pb_text_0_tb_footer h4{font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-weight:700;font-size:48px;color:#fff!important;line-height:1.01em}.et_pb_text_0_tb_footer{padding-top:0px!important;padding-bottom:25px!important}.et_pb_row_2_tb_footer{background-color:#444d34;z-index:5!important;position:relative}.et_pb_row_2_tb_footer.et_pb_row{padding-bottom:50px!important;padding-bottom:50px}.et_pb_text_4_tb_footer.et_pb_text,.et_pb_blurb_0_tb_footer.et_pb_blurb .et_pb_blurb_description a,.et_pb_blurb_1_tb_footer.et_pb_blurb .et_pb_blurb_description a,.et_pb_text_1_tb_footer.et_pb_text{color:#ffffff!important}.et_pb_blurb_0_tb_footer.et_pb_blurb,.et_pb_blurb_1_tb_footer.et_pb_blurb,.et_pb_text_1_tb_footer{padding-left:50px!important}.et_pb_text_2_tb_footer.et_pb_text,.et_pb_text_2_tb_footer.et_pb_text a,.et_pb_text_4_tb_footer.et_pb_text a{color:#9fc35c!important}.et_pb_text_2_tb_footer{line-height:1em;font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-weight:700;font-size:14px;line-height:1em;padding-top:5px!important;padding-left:50px!important}.et_pb_text_4_tb_footer a,.et_pb_text_2_tb_footer a{text-decoration:underline}.et_pb_blurb_1_tb_footer .et-pb-icon,.et_pb_blurb_0_tb_footer .et-pb-icon{font-size:24px;color:#fff;font-family:FontAwesome!important;font-weight:400!important}div.et_pb_section.et_pb_section_3_tb_footer{background-position:top center;background-image:url(wp-content/uploads/sites/1402039/2019/10/bg-footer-wrap.jpg)!important}.et_pb_section_3_tb_footer.et_pb_section{padding-top:100px;padding-right:10px;padding-left:10px;margin-top:-50px;background-color:#0c0c0b!important}.et_pb_button_0_tb_footer_wrapper .et_pb_button_0_tb_footer,.et_pb_button_0_tb_footer_wrapper .et_pb_button_0_tb_footer:hover{padding-top:8.4px!important;padding-right:28px!important;padding-bottom:8.4px!important;padding-left:28px!important}.et_pb_button_0_tb_footer_wrapper{margin-top:40px!important}body #page-container .et_pb_section .et_pb_button_0_tb_footer{color:#0d0d0c!important;border-width:0px!important;border-radius:0px;letter-spacing:0.01px;font-size:16px;font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif!important;font-weight:700!important;text-transform:uppercase!important;background-color:#fff}body #page-container .et_pb_section .et_pb_button_0_tb_footer:hover{letter-spacing:0.01px!important;background-image:initial;background-color:#9fc35c}body #page-container .et_pb_section .et_pb_button_0_tb_footer:before,body #page-container .et_pb_section .et_pb_button_0_tb_footer:after{display:none!important}.et_pb_button_0_tb_footer{transition:background-color 300ms ease 0ms,letter-spacing 300ms ease 0ms}.et_pb_button_0_tb_footer,.et_pb_button_0_tb_footer:after{transition:all 300ms ease 0ms}.et_pb_social_media_follow_network_1_tb_footer a.icon,.et_pb_social_media_follow .et_pb_social_media_follow_network_1_tb_footer .icon:before,.et_pb_social_media_follow_network_0_tb_footer a.icon,.et_pb_social_media_follow .et_pb_social_media_follow_network_0_tb_footer .icon:before,.et_pb_social_media_follow_network_2_tb_footer a.icon,.et_pb_social_media_follow .et_pb_social_media_follow_network_2_tb_footer .icon:before{transition:background-color 300ms ease 0ms,background-image 300ms ease 0ms,color 300ms ease 0ms}.et_pb_social_media_follow .et_pb_social_media_follow_network_1_tb_footer.et_pb_social_icon .icon:before,.et_pb_social_media_follow .et_pb_social_media_follow_network_2_tb_footer.et_pb_social_icon .icon:before,.et_pb_social_media_follow .et_pb_social_media_follow_network_0_tb_footer.et_pb_social_icon .icon:before{color:#0c0c0b}.et_pb_social_media_follow .et_pb_social_media_follow_network_0_tb_footer.et_pb_social_icon:hover .icon:before,.et_pb_social_media_follow .et_pb_social_media_follow_network_2_tb_footer.et_pb_social_icon:hover .icon:before,.et_pb_social_media_follow .et_pb_social_media_follow_network_1_tb_footer.et_pb_social_icon:hover .icon:before{color:#fff}.et_pb_social_media_follow .et_pb_social_media_follow_network_0_tb_footer .icon:before,.et_pb_social_media_follow .et_pb_social_media_follow_network_1_tb_footer .icon:before,.et_pb_social_media_follow .et_pb_social_media_follow_network_2_tb_footer .icon:before{font-size:22px;line-height:44px;height:44px;width:44px}.et_pb_social_media_follow .et_pb_social_media_follow_network_0_tb_footer .icon,.et_pb_social_media_follow .et_pb_social_media_follow_network_1_tb_footer .icon,.et_pb_social_media_follow .et_pb_social_media_follow_network_2_tb_footer .icon{height:44px;width:44px}ul.et_pb_social_media_follow_0_tb_footer{padding-top:40px!important}.et_pb_text_3_tb_footer{font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-size:14.11px;margin-top:35px!important}.et_pb_text_4_tb_footer{line-height:2em;font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-size:15px;line-height:2em;padding-top:42px!important;padding-bottom:27px!important}.et_pb_column_7_tb_footer{padding-right:10px}.et_pb_social_media_follow_network_0_tb_footer a.icon,.et_pb_social_media_follow_network_2_tb_footer a.icon,.et_pb_social_media_follow_network_1_tb_footer a.icon{background-color:#8ea06d!important}.et_pb_social_media_follow_network_1_tb_footer:hover a.icon,.et_pb_social_media_follow_network_2_tb_footer:hover a.icon,.et_pb_social_media_follow_network_0_tb_footer:hover a.icon{background-image:initial!important;background-color:#444d34!important}.et_pb_social_media_follow_network_2_tb_footer.et_pb_social_icon a.icon,.et_pb_social_media_follow_network_0_tb_footer.et_pb_social_icon a.icon,.et_pb_social_media_follow_network_1_tb_footer.et_pb_social_icon a.icon{border-radius:0px 0px 0px 0px}.et_pb_social_media_follow_network_2_tb_footer,.et_pb_social_media_follow_network_1_tb_footer,.et_pb_social_media_follow_network_0_tb_footer{margin-left:8px!important}@media only screen and (min-width:981px){.et_pb_image_3_tb_footer{display:none!important}}@media only screen and (max-width:980px){.et_pb_section_1_tb_footer.et_pb_section,.et_pb_column_4_tb_footer{padding-bottom:20px}.et_pb_image_0_tb_footer .et_pb_image_wrap img,.et_pb_image_1_tb_footer .et_pb_image_wrap img,.et_pb_image_2_tb_footer .et_pb_image_wrap img,et_pb_image_3_tb_footer .et_pb_image_wrap img{}.et_pb_image_2_tb_footer{margin-top:30px!important}.et_pb_section_2_tb_footer.et_pb_section{padding-top:0px}.et_pb_row_1_tb_footer.et_pb_row{padding-right:20px!important;padding-left:20px!important;padding-right:20px!important;padding-left:20px!important}.et_pb_text_0_tb_footer h2,.et_pb_text_0_tb_footer h4{font-size:30px}.et_pb_text_0_tb_footer{padding-bottom:25px!important;margin-bottom:0px!important}.et_pb_text_1_tb_footer,.et_pb_text_2_tb_footer{padding-left:0px!important}.et_pb_blurb_0_tb_footer.et_pb_blurb,.et_pb_blurb_1_tb_footer.et_pb_blurb{padding-left:0px!important;max-width:270px}.et_pb_section_3_tb_footer.et_pb_section{padding-top:50px}.et_pb_column_7_tb_footer{padding-right:0px}.et_pb_blurb_0_tb_footer.et_pb_blurb.et_pb_module,.et_pb_blurb_1_tb_footer.et_pb_blurb.et_pb_module{margin-left:auto!important;margin-right:auto!important}}@media only screen and (max-width:767px){.et_pb_image_0_tb_footer .et_pb_image_wrap img,.et_pb_image_1_tb_footer .et_pb_image_wrap img,.et_pb_image_2_tb_footer .et_pb_image_wrap img,et_pb_image_3_tb_footer .et_pb_image_wrap img{}.et_pb_section_3_tb_footer.et_pb_section{padding-top:100px}.et_pb_blurb_0_tb_footer.et_pb_blurb.et_pb_module,.et_pb_blurb_1_tb_footer.et_pb_blurb.et_pb_module{margin-left:auto!important;margin-right:auto!important}}div.et_pb_section.et_pb_section_0{background-image:url(wp-content/uploads/sites/1402039/2019/10/bg-banner-home.jpg)!important}.et_pb_section_0.et_pb_section{padding-top:130px;padding-bottom:210px;background-color:#000000!important}.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row{max-width:1325px}.et_pb_text_4.et_pb_text,.et_pb_text_6.et_pb_text,.et_pb_text_0.et_pb_text{color:#ffffff!important}.et_pb_text_0{line-height:1.2em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-size:30px;line-height:1.2em}.et_pb_text_1.et_pb_text{color:#c9d4b6!important}.et_pb_text_1{line-height:1.01em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-weight:700;font-size:55px;line-height:1.01em;padding-bottom:20px!important}.et_pb_text_14.et_pb_text,.et_pb_text_2.et_pb_text{color:#fff!important}.et_pb_text_2{line-height:1.5em;font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-weight:300;font-size:23px;line-height:1.5em}.et_pb_text_3.et_pb_text{color:#C9D4B6!important}.et_pb_text_3{font-weight:700;text-transform:uppercase;font-size:34px}.et_pb_section_1.et_pb_section{background-color:#333333!important}.et_pb_row_1.et_pb_row{padding-top:50px!important;padding-bottom:50px!important;padding-top:50px;padding-bottom:50px}.et_pb_text_4{line-height:1.2em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-size:30px;line-height:1.2em;padding-right:33px!important;padding-left:30px!important}.et_pb_text_5.et_pb_text,.et_pb_text_13.et_pb_text a{color:#9fc35c!important}.et_pb_text_5{line-height:1.01em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-weight:700;font-size:60px;line-height:1.01em;padding-right:33px!important;padding-bottom:20px!important;padding-left:30px!important}.et_pb_text_6{line-height:1.5em;font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-weight:300;font-size:23px;line-height:1.5em;padding-right:33px!important;padding-left:30px!important}.et_pb_row_12,body #page-container .et-db #et-boc .et-l .et_pb_row_12.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_12.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_12.et_pb_row,.et_pb_row_2,body #page-container .et-db #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_4,body #page-container .et-db #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row{width:100%;max-width:100%}.et_pb_image_0{text-align:left;margin-left:0}.et_pb_image_3,.et_pb_image_1,.et_pb_image_4,.et_pb_blurb_2.et_pb_blurb .et_pb_blurb_description,.et_pb_blurb_3.et_pb_blurb .et_pb_blurb_description,.et_pb_blurb_1.et_pb_blurb .et_pb_blurb_description,.et_pb_blurb_0.et_pb_blurb .et_pb_blurb_description{text-align:center}.et_pb_section_2{z-index:9;position:relative}.et_pb_section_2.et_pb_section{background-color:#eeeeee!important}.et_pb_row_3,body #page-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row{width:90%}.et_pb_row_3{transform:translateX(0px) translateY(-44px)}.et_pb_blurb_extended_1.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_4.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_3.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_2.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_0.et_pb_blurb_extended .et_pb_blurb_description{font-size:24px;color:#ffffff!important;line-height:1.3em}.et_pb_blurb_extended_2.et_pb_blurb_extended .et_pb_blurb_description:hover,.et_pb_blurb_extended_4.et_pb_blurb_extended .et_pb_blurb_description:hover,.et_pb_blurb_extended_0.et_pb_blurb_extended .et_pb_blurb_description:hover,.et_pb_blurb_extended_1.et_pb_blurb_extended .et_pb_blurb_description:hover,.et_pb_blurb_extended_3.et_pb_blurb_extended .et_pb_blurb_description:hover{color:#000!important}.et_pb_blurb_extended_0{background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-catastrophic.jpg);background-color:#221f1e;box-shadow:6px 6px 18px 0px rgba(0,0,0,0.3)}.et_pb_blurb_extended_0:hover{background-size:cover;background-position:center;background-repeat:no-repeat;background-blend-mode:normal;background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-catastrophic-hover.jpg);background-color:#221f1e}.et_pb_blurb_extended_1.et_pb_blurb_extended,.et_pb_blurb_extended_2.et_pb_blurb_extended,.et_pb_blurb_extended_3.et_pb_blurb_extended,.et_pb_blurb_extended_4.et_pb_blurb_extended,.et_pb_blurb_extended_0.et_pb_blurb_extended{height:239px}.et_pb_blurb_extended_2.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_2,.et_pb_blurb_extended_1.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_1,.et_pb_blurb_extended_0.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_0,.et_pb_blurb_extended_3.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_3,.et_pb_blurb_extended_4.et_pb_blurb_extended .et_pb_blurb_description,.et_pb_blurb_extended_4{transition:color 300ms ease 0ms,background-color 300ms ease 0ms,background-image 300ms ease 0ms}.et_pb_blurb_extended_3 .classic .et_pb_blurb_content,.et_pb_blurb_extended_2 .classic .et_pb_blurb_content,.et_pb_blurb_extended_4 .classic .et_pb_blurb_content,.et_pb_blurb_extended_1 .classic .et_pb_blurb_content,.et_pb_blurb_extended_0 .classic .et_pb_blurb_content{max-width:550px}.et_pb_blurb_extended_4:hover .et_pb_blurb_container .et_pb_module_header,.et_pb_blurb_extended_4:hover .et_pb_blurb_container .et_pb_module_header a,.et_pb_blurb_extended_4:hover .et_pb_blurb_container .et_pb_blurb_description,.et_pb_blurb_extended_3:hover .et_pb_blurb_container .et_pb_blurb_description,.et_pb_blurb_extended_0:hover .et_pb_blurb_container .et_pb_module_header,.et_pb_blurb_extended_3:hover .et_pb_blurb_container .et_pb_module_header a,.et_pb_blurb_extended_3:hover .et_pb_blurb_container .et_pb_module_header,.et_pb_blurb_extended_0:hover .et_pb_blurb_container .et_pb_module_header a,.et_pb_blurb_extended_0:hover .et_pb_blurb_container .et_pb_blurb_description,.et_pb_blurb_extended_2:hover .et_pb_blurb_container .et_pb_blurb_description,.et_pb_blurb_extended_2:hover .et_pb_blurb_container .et_pb_module_header a,.et_pb_blurb_extended_1:hover .et_pb_blurb_container .et_pb_module_header,.et_pb_blurb_extended_1:hover .et_pb_blurb_container .et_pb_module_header a,.et_pb_blurb_extended_2:hover .et_pb_blurb_container .et_pb_module_header,.et_pb_blurb_extended_1:hover .et_pb_blurb_container .et_pb_blurb_description{color:#221f1e!important}.et_pb_blurb_extended_1{background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-auto.jpg);background-color:#221f1e;box-shadow:6px 6px 18px 0px rgba(0,0,0,0.3)}.et_pb_blurb_extended_1:hover{background-size:cover;background-position:center;background-repeat:no-repeat;background-blend-mode:normal;background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-auto-hover.jpg);background-color:#221f1e}.et_pb_blurb_extended_2{background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-medical.jpg);background-color:#221f1e;box-shadow:6px 6px 18px 0px rgba(0,0,0,0.3)}.et_pb_blurb_extended_2:hover{background-size:cover;background-position:center;background-repeat:no-repeat;background-blend-mode:normal;background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-medical-hover.jpg);background-color:#221f1e}.et_pb_blurb_extended_3{background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-insurance-1.jpg);background-color:#221f1e;box-shadow:6px 6px 18px 0px rgba(0,0,0,0.3)}.et_pb_blurb_extended_3:hover{background-size:cover;background-position:center;background-repeat:no-repeat;background-blend-mode:normal;background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-insurance-hover.jpg);background-color:#221f1e}.et_pb_blurb_extended_4{background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-other.jpg);background-color:#221f1e}.et_pb_blurb_extended_4:hover{background-size:cover;background-position:center;background-repeat:no-repeat;background-blend-mode:normal;background-image:url(wp-content/uploads/sites/1402039/2019/10/pa-other-hover.jpg);background-color:#221f1e}.et_pb_section_3.et_pb_section{background-color:#c9d4b6!important}.et_pb_text_7 h1{font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-size:36px;color:#0c0c0b!important;letter-spacing:-0.7px;line-height:1.22em}.et_pb_text_7{margin-bottom:30px!important;width:90%}.et_pb_text_17.et_pb_text a,.et_pb_text_12.et_pb_text,.et_pb_text_12.et_pb_text a,.et_pb_text_18.et_pb_text a,.et_pb_text_18.et_pb_text,.et_pb_text_10.et_pb_text,.et_pb_text_17.et_pb_text,.et_pb_text_16.et_pb_text,.et_pb_text_16.et_pb_text a,.et_pb_text_8.et_pb_text a,.et_pb_text_8.et_pb_text,.et_pb_text_10.et_pb_text a{color:#322c14!important}.et_pb_text_8{line-height:1.54em;font-size:18px;letter-spacing:-0.3px;line-height:1.54em;width:90%}.et_pb_text_16 a,.et_pb_text_17 a,.et_pb_text_12 a,.et_pb_text_10 a,.et_pb_text_18 a,.et_pb_text_8 a{text-decoration:underline}.et_pb_image_2{text-align:right;margin-right:0}.et_pb_section_4.et_pb_section{padding-top:130px;padding-bottom:128px}.et_pb_row_8,body #page-container .et-db #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,.et_pb_row_7,body #page-container .et-db #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,.et_pb_row_5,body #page-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row{max-width:737px}.et_pb_text_11 h2,.et_pb_text_9 h2{font-size:36px;color:#0c0c0b!important;letter-spacing:-1px}.et_pb_text_9,.et_pb_text_11{margin-bottom:30px!important}.et_pb_blurb_2.et_pb_blurb p,.et_pb_blurb_1.et_pb_blurb p,.et_pb_blurb_0.et_pb_blurb p,.et_pb_blurb_3.et_pb_blurb p{line-height:1.6em}.et_pb_blurb_0.et_pb_blurb,.et_pb_blurb_3.et_pb_blurb,.et_pb_blurb_1.et_pb_blurb,.et_pb_blurb_2.et_pb_blurb{font-size:16px;color:#ffffff!important;line-height:1.6em;background-image:url(wp-content/uploads/sites/1402039/2019/10/bg-results.jpg);background-color:#221f1e;height:100%;padding-top:41px!important;padding-right:36px!important;padding-bottom:80px!important;padding-left:36px!important}.et_pb_blurb_0.et_pb_blurb .et_pb_blurb_description a,.et_pb_blurb_3.et_pb_blurb .et_pb_blurb_description a,.et_pb_blurb_1.et_pb_blurb .et_pb_blurb_description a,.et_pb_blurb_2.et_pb_blurb .et_pb_blurb_description a{font-weight:700;text-transform:uppercase;text-decoration:underline;font-size:16px;color:#9fc35c!important}.et_pb_text_10{line-height:1.54em;font-size:18px;letter-spacing:-0.3px;line-height:1.54em;padding-top:40px!important}.et_pb_section_5.et_pb_section{padding-top:120px;padding-bottom:120px;background-color:#eeeeee!important}.et_pb_text_12{line-height:1.54em;font-size:18px;letter-spacing:-0.3px;line-height:1.54em}.et_pb_row_9.et_pb_row{padding-top:40px!important;padding-top:40px}.dica_divi_carousel_0 .dica_divi_carouselitem .dica-item-content .content,.dica_divi_carousel_0 .dica_divi_carouselitem .dica-item-content .content p{text-align:center!important}.dica_divi_carousel_0 .dica_divi_carouselitem .dica-image-container .image{max-width:100%}.dica_divi_carousel_0 .dica_divi_carouselitem .dica-image-container{text-align:center!important;z-index:10!important}.dica_divi_carousel_0 .dica_divi_carouselitem .dica-item-content{z-index:10!important}.dica_divi_carousel_0 .dica_divi_carouselitem{width:calc(100%/4)}.et_pb_section_6.et_pb_section{padding-top:78px;padding-right:10px;padding-bottom:75px;padding-left:10px}.et_pb_row_10,body #page-container .et-db #et-boc .et-l .et_pb_row_10.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_10.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_10.et_pb_row{width:100%}.et_pb_text_13{line-height:1.3em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-size:35px;line-height:1.3em}.et_pb_text_13 a{font-weight:700;font-size:39px;line-height:1.3em}.et_pb_section_7.et_pb_section{padding-bottom:78px}.et_pb_image_5{margin-top:0px!important;text-align:center}.et_pb_section_8.et_pb_section{background-color:#454545!important}.et_pb_text_14 h3,.et_pb_text_14 h2{font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-size:28px;color:#ffffff!important}.et_pb_text_14{padding-top:62px!important;padding-right:58px!important;padding-bottom:20px!important;padding-left:58px!important}.et_pb_text_15.et_pb_text{color:#0c0c0b!important}.et_pb_text_15{line-height:1.22em;font-family:'Oxygen',Helvetica,Arial,Lucida,sans-serif;font-size:34px;letter-spacing:-1px;line-height:1.22em;margin-bottom:36px!important}.et_pb_text_16,.et_pb_text_17,.et_pb_text_18{line-height:1.54em;font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;font-size:18px;letter-spacing:-0.3px;line-height:1.54em;margin-top:8px!important;margin-bottom:27px!important}.et_pb_column_1{padding-left:10px}.et_pb_column_9{padding-top:100px;padding-right:50px;padding-bottom:100px;padding-left:20px}.et_pb_column_10{background-image:url(wp-content/uploads/sites/1402039/2019/10/iStock-518335452.jpg)}.et_pb_column_14,.et_pb_column_12,.et_pb_column_15,.et_pb_column_13{padding-right:10px;padding-left:10px}.dica_divi_carousel .dica_divi_carouselitem_3.dica_divi_carouselitem .dica-item-content .content,.dica_divi_carousel .dica_divi_carouselitem_3.dica_divi_carouselitem .dica-item-content .content p,.dica_divi_carousel .dica_divi_carouselitem_1.dica_divi_carouselitem .dica-item-content .content,.dica_divi_carousel .dica_divi_carouselitem_1.dica_divi_carouselitem .dica-item-content .content p,.dica_divi_carousel .dica_divi_carouselitem_2.dica_divi_carouselitem .dica-item-content .content,.dica_divi_carousel .dica_divi_carouselitem_2.dica_divi_carouselitem .dica-item-content .content p,.dica_divi_carousel .dica_divi_carouselitem_0.dica_divi_carouselitem .dica-item-content .content,.dica_divi_carousel .dica_divi_carouselitem_0.dica_divi_carouselitem .dica-item-content .content p{font-size:21px!important}.et_pb_column_23{background-color:#22231f}.et_pb_column_24{background-size:contain;background-position:bottom center;background-image:url(wp-content/uploads/sites/1402039/2021/04/columbus-skyline2.jpg);background-color:#c9d4b6;padding-top:77px;padding-right:74px;padding-bottom:235px;padding-left:84px}.et_pb_text_8.et_pb_module,.et_pb_row_7.et_pb_row,.et_pb_row_5.et_pb_row,.et_pb_text_7.et_pb_module,.et_pb_row_8.et_pb_row,.et_pb_row_4.et_pb_row,.et_pb_row_3.et_pb_row,.et_pb_row_2.et_pb_row{margin-left:auto!important;margin-right:auto!important}@media only screen and (min-width:981px){.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row{width:100%}.et_pb_section_1,.et_pb_image_0,.et_pb_image_1,.et_pb_image_2{display:none!important}.et_pb_text_7,.et_pb_text_8{max-width:520px}}@media only screen and (max-width:980px){div.et_pb_section.et_pb_section_0{background-image:initial!important}.et_pb_section_0.et_pb_section{padding-top:20px;padding-right:10px;padding-bottom:20px;padding-left:10px;background-color:#1f201e!important}.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row{width:90%}.et_pb_text_0,.et_pb_text_0 h2,.et_pb_text_4 h2{font-size:20px}.et_pb_text_1,.et_pb_text_11 h2{font-size:30px}.et_pb_text_5 h3,.et_pb_text_13 a,.et_pb_text_1 h3{font-size:28px}.et_pb_text_2{font-size:16px}.et_pb_text_4{font-size:20px;padding-right:10px!important;padding-left:10px!important}.et_pb_text_5{font-size:30px;padding-right:10px!important;padding-bottom:20px!important;padding-left:10px!important}.et_pb_text_6{font-size:16px;padding-right:10px!important;padding-left:10px!important}.et_pb_image_4 .et_pb_image_wrap img,.et_pb_image_2 .et_pb_image_wrap img,.et_pb_image_3 .et_pb_image_wrap img,.et_pb_image_1 .et_pb_image_wrap img,.et_pb_image_0 .et_pb_image_wrap img,et_pb_image_5 .et_pb_image_wrap img{}.et_pb_section_2{z-index:0}.et_pb_row_3.et_pb_row{padding-right:30px!important;padding-left:30px!important;padding-right:30px!important;padding-left:30px!important}.et_pb_row_3{transform:translateX(0px) translateY(0px)}.et_pb_section_5.et_pb_section,.et_pb_section_3.et_pb_section,.et_pb_section_4.et_pb_section{padding-top:60px;padding-bottom:60px}.et_pb_text_7 h1{font-size:25px;text-align:center}.et_pb_text_7{margin-bottom:30px!important;max-width:1024px}.et_pb_text_8{max-width:1024px}.et_pb_image_2{text-align:center;margin-left:auto;margin-right:auto}.et_pb_text_9 h2{font-size:30px;text-align:center}.et_pb_text_9,.et_pb_text_11{margin-bottom:10px!important}.et_pb_blurb_0.et_pb_blurb,.et_pb_blurb_1.et_pb_blurb,.et_pb_blurb_2.et_pb_blurb,.et_pb_blurb_3.et_pb_blurb{font-size:14px;height:100%;padding-top:30px!important;padding-right:10px!important;padding-bottom:45px!important;padding-left:10px!important}.dica_divi_carousel_0 .dica_divi_carouselitem .dica-item-content,.dica_divi_carousel_0 .dica_divi_carouselitem .dica-image-container{z-index:10!important}.et_pb_section_6.et_pb_section{padding-top:25px;padding-bottom:25px}.et_pb_text_13{font-size:25px}.et_pb_section_7.et_pb_section{padding-bottom:60px}.et_pb_image_5{margin-top:30px!important}.et_pb_text_15{font-size:30px;margin-bottom:0px!important}.et_pb_column_1{padding-left:0%}.et_pb_column_7,.et_pb_column_6,.et_pb_column_5,.et_pb_column_4{padding-right:10px;padding-bottom:30px;padding-left:10px}.et_pb_column_8{padding-right:10px;padding-bottom:0px;padding-left:10px}.et_pb_column_9{padding-top:0px;padding-right:0px;padding-bottom:40px;padding-left:0px}.et_pb_column_10{background-image:initial;background-color:initial;padding-right:20px;padding-left:20px}.et_pb_column_24{background-image:initial;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px}.et_pb_text_8.et_pb_module,.et_pb_text_7.et_pb_module{margin-left:auto!important;margin-right:auto!important}}@media only screen and (min-width:768px) and (max-width:980px){.et_pb_section_0,.et_pb_image_1,.et_pb_row_10{display:none!important}}@media only screen and (max-width:767px){div.et_pb_section.et_pb_section_0{background-image:initial!important}.et_pb_section_0,.et_pb_image_0,.et_pb_row_10{display:none!important}.et_pb_section_0.et_pb_section{background-color:#1f201e!important}.et_pb_image_0 .et_pb_image_wrap img,.et_pb_image_1 .et_pb_image_wrap img,.et_pb_image_5 .et_pb_image_wrap img,.et_pb_image_4 .et_pb_image_wrap img,.et_pb_image_3 .et_pb_image_wrap img,et_pb_image_2 .et_pb_image_wrap img{}.et_pb_row_3.et_pb_row{padding-right:0px!important;padding-left:0px!important;padding-right:0px!important;padding-left:0px!important}.et_pb_row_3{transform:translateX(0px) translateY(0px)}.et_pb_section_5.et_pb_section,.et_pb_section_3.et_pb_section,.et_pb_section_4.et_pb_section{padding-top:50px;padding-bottom:50px}.et_pb_blurb_1.et_pb_blurb,.et_pb_blurb_3.et_pb_blurb,.et_pb_blurb_0.et_pb_blurb,.et_pb_blurb_2.et_pb_blurb{height:100%}.dica_divi_carousel_0 .dica_divi_carouselitem .dica-image-container,.dica_divi_carousel_0 .dica_divi_carouselitem .dica-item-content{z-index:10!important}.et_pb_section_7.et_pb_section{padding-bottom:50px}.et_pb_column_8{padding-bottom:0px}.et_pb_column_10,.et_pb_column_24{background-image:initial}}.et_pb_row,a:not([href]){cursor:default}.nap-item--phone{white-space:nowrap}@media all and (max-width:360px){.et_had_animation,.et_animated{animation:none!important;transform:none!important;opacity:1!important}}body{font-weight:initial}h1,h2,h3,h4,h5,h6{overflow-wrap:normal}a:visited{color:#e3c186}.fl-mobile-menu .et_mobile_nav_menu,.fl-mobile-menu .et_mobile_nav_menu>div{width:100%}.fl-mobile-menu .mobile_menu_bar{display:flex;align-items:center;justify-content:center;height:55px}.fl-mobile-menu .mobile_menu_bar:after{content:"MENU";color:#fff;font-size:16px;font-weight:700}.fl-mobile-menu ul.et_mobile_menu{border:none}.fl-mobile-menu.fl-mobile-pa .mobile_menu_bar{height:56px}.fl-mobile-menu.fl-mobile-pa .mobile_menu_bar:after{content:"VIEW OUR PRACTICE AREAS";color:#fff;font-size:16px;font-weight:700}.fl-scroll-header{display:none;position:fixed;left:0;top:0;width:100%;z-index:99}.fl-main-menu ul.et-menu{margin:0}.fl-main-menu ul.et-menu li.menu-item{margin:0;padding:0}.fl-main-menu ul.et-menu li.menu-item a{margin:0;padding:5px 17px}.fl-main-menu ul.et-menu li.menu-item a::after{display:none}.fl-main-menu ul.et-menu li.menu-item ul.sub-menu{border:none;padding:0!important}.fl-main-menu ul.et-menu li.menu-item ul.sub-menu>li{padding:0;margin:0;width:100%}.fl-main-menu ul.et-menu li.menu-item ul.sub-menu>li a{padding:10px;margin:0;width:100%}.fl-footer-badges,.page-contact .fl-contact-section,.home .fl-contact-section{display:none}body:not(.home):not(.page-blog):not(.single-post):not(.fl-is-loop):not(.search-results).fl-footer-badges{display:block}.fl-map-link{clear:both!important}body.et-db #page-container .fl-footer-hover-link a:hover{text-decoration:none!important}@media (min-width:981px){.fl-home-section-1 .et_pb_row .et_pb_column:not(:last-child){margin-right:4px}}.fl-home-heading h1,.fl-home-heading h2,.fl-home-heading h3{font-weight:400!important}.fl-blurb-pa p{position:absolute;bottom:25px;color:#9fc35c;text-transform:uppercase;font:700 16px/1 "Source Sans Pro",sans-serif}.fl-blurb-pa:hover p{color:#000}.fl-blurb-pa .et_pb_module_inner,.fl-blurb-pa .et_pb_blurb_position_top,.fl-blurb-pa .et_pb_blurb_content,.fl-blurb-case .et_pb_module_inner,.fl-blurb-case .et_pb_blurb_position_top,.fl-blurb-case .et_pb_blurb_content{height:100%!important}.fl-blurb-case span{color:#9fc35c;font-weight:700;font-size:30px;display:block;padding-bottom:20px}.fl-blurb-case a{position:absolute;bottom:25px;width:100%;left:50%;transform:translateX(-50%)}.fl-blurb-case a:hover{text-decoration:none!important}.fl-home-section-4 h2{font-weight:400}@media (max-width:980px){.et-db #et-boc .fl-blurb-case{height:200px!important;margin-bottom:10px!important}.fl-blurb-case span{font-size:26px}}@media only screen and (min-width:981px) and (max-width:1099px){.et-db #et-boc .fl-home-section-1 .et_pb_row{padding-left:30!important;padding-right:30!important}.et-db #et-boc .fl-blurb-pa{height:190px!important}.et-db #et-boc .fl-blurb-case span{font-size:25px!important}.fl-blurb-case a{bottom:9px}}@media (min-width:980px){.fl-vertical-center{display:flex;flex-direction:column;justify-content:center}}.fl-main-menu ul.sub-menu li a{opacity:1;width:100%}.fl-main-menu ul.sub-menu li a:hover{background:#fff!important}.fl-main-menu ul.et-menu li.menu-item ul.sub-menu{background:#221f1e!important}.fl-main-menu #menu-main-menu-1.et-menu ul.sub-menu li a{color:#fff!important}.fl-main-menu #menu-main-menu.et-menu ul.sub-menu li a{color:#fff!important}.fl-main-menu #menu-main-menu ul.sub-menu li a:hover{background:#221f1e!important;color:#9fc35c!important}.fl-main-menu #menu-main-menu-1.et-menu ul.sub-menu li a:hover{background:#221f1e!important;color:#9fc35c!important}@media (max-width:768px){.et_pb_column.fl-pa-clnm{width:100%!important;margin:auto!important}}@media (max-width:980px){.fl-blurb-case a{bottom:22px}}.fl-lightlinks a{color:#fff!important;text-decoration:underline!important}.fl-lightlinks a:hover{color:#fff;text-decoration:none!important}.fl-darklinks a{color:#444d34!important;text-decoration:underline!important}.fl-darklinks a:hover{text-decoration:none!important}blockquote{border-color:#000}.fl-blurb-case .et_pb_blurb_content{position:static}.fl-mobile-row .et_pb_column:first-child{float:left!important;width:50%!important}.fl-mobile-row .et_pb_column:last-child{float:right!important;width:50%!important}#fl-template .fl-3-column{width:33.3% !important;float:left !important;height:57px !important}#fl-template .mobile_menu_bar:after{content:"MENU";position:relative;color:black;font-size:20px;top:-4px}#fl-template .fl-phone-icon{font-size:inherit;padding-right:5px}#fl-sticky-mobile-menu.sticky{position:fixed !important;top:0;left:0;width:100%;z-index:9999 !important}@font-face{font-family:'FontAwesome';src:url('wp-content/plugins/divi-fontawesome-gtm/vendor/font-awesome-4.7.0/fonts/fontawesome-webfont3e6e.eot?v=4.7.0');src:url('wp-content/plugins/divi-fontawesome-gtm/vendor/font-awesome-4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0') format('embedded-opentype'),url('wp-content/plugins/divi-fontawesome-gtm/vendor/font-awesome-4.7.0/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0') format('woff2'),url('wp-content/plugins/divi-fontawesome-gtm/vendor/font-awesome-4.7.0/fonts/fontawesome-webfont3e6e.woff?v=4.7.0') format('woff'),url('wp-content/plugins/divi-fontawesome-gtm/vendor/font-awesome-4.7.0/fonts/fontawesome-webfont3e6e.ttf?v=4.7.0') format('truetype'),url('wp-content/plugins/divi-fontawesome-gtm/vendor/font-awesome-4.7.0/fonts/fontawesome-webfont3e6e.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;font-display:swap}@keyframes a{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes nf-scaleout{0%{transform:scale(0)}to{transform:scale(1);opacity:0}}@keyframes nf-scaleout{0%{transform:scale(0)}to{transform:scale(1);opacity:0}}@-webkit-keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%);transform:translateX(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%);transform:translateX(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@font-face{font-family:ETmodules;font-display:block;src:url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.eot);src:url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.eot#iefix) format("embedded-opentype"),url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.ttf) format("truetype"),url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.woff) format("woff"),url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.svg#ETmodules) format("svg");font-weight:400;font-style:normal}@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;font-display:block;src:url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.eot);src:url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.eot#iefix) format("embedded-opentype"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.woff2) format("woff2"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.woff) format("woff"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.ttf) format("truetype"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-regular-400.svg#fontawesome) format("svg")}@font-face{font-family:FontAwesome;font-style:normal;font-weight:900;font-display:block;src:url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.eot);src:url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.eot#iefix) format("embedded-opentype"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.woff2) format("woff2"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.woff) format("woff"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.ttf) format("truetype"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-solid-900.svg#fontawesome) format("svg")}@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;font-display:block;src:url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.eot);src:url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.eot#iefix) format("embedded-opentype"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.woff2) format("woff2"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.woff) format("woff"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.ttf) format("truetype"),url(wp-content/themes/Divi/core/admin/fonts/fontawesome/fa-brands-400.svg#fontawesome) format("svg")}@font-face{font-family:ETmodules;font-display:block;src:url(wp-content/themes/Divi/core/admin/fonts/modules/social/modules.eot);src:url(wp-content/themes/Divi/core/admin/fonts/modules/social/modules.eot#iefix) format("embedded-opentype"),url(wp-content/themes/Divi/core/admin/fonts/modules/social/modules.ttf) format("truetype"),url(wp-content/themes/Divi/core/admin/fonts/modules/social/modules.woff) format("woff"),url(wp-content/themes/Divi/core/admin/fonts/modules/social/modules.svg#ETmodules) format("svg");font-weight:400;font-style:normal}@font-face{font-family:ETmodules;font-display:block;src:url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.eot);src:url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.eot#iefix) format("embedded-opentype"),url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.ttf) format("truetype"),url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.woff) format("woff"),url(wp-content/themes/Divi/core/admin/fonts/modules/all/modules.svg#ETmodules) format("svg");font-weight:400;font-style:normal}@keyframes Grow{0%{opacity:0;transform:scaleY(.5)}to{opacity:1;transform:scale(1)}}</style>
+<link rel="preload" as="style" href="wp-content/cache/jch-optimize/css/5b7ed32d830edacc712bd8b2d44f7844.css" onload="this.rel='stylesheet'" />
+
+<script>var FLDataLayer={"cmsName":"fl-wordpress","cmsEnvironment":"prod","cmsServer":"findlaw4.flsitebuilder.com","pageGoal":"goal3","pageLanguage":"english","pageType":"blog-post","practiceArea":"","subPageType":"","siteName":"3309238","contentOrigination":""};</script>
+
+<script language="JavaScript" type="text/javascript">var FL=FL||{};FL={"account":{"accountId":2378073,"siteId":69344,"subscriptionId":"3309238","pixelReady":true},"adobeAnalytics":{"prodReportSuites":"findlaw-11832,findlaw-global-v1,findlawfirmstaging","stageReportSuites":"findlawfsindividualstage,findlawfsglobalstage,findlawglobalstage"},"google":{"conversionId":"AW-847132197","conversions":{"fl_tag_site_chat_started":"uJs6CIG-ka0BEKXs-JMD","fl_tag_site_contact_form_submitted":"PhaxCP-rjK0BEKXs-JMD"}}};</script>
+<script src="tag-manager/a0c0d582e2e6/99ae645efd27/launch-4b8eab27482e.min.js" async defer="defer"></script>
+
+<script>
+    var FLDataLayer = FLDataLayer || window.FLDataLayer || {};
+    FLDataLayer.geo = FLDataLayer.geo || {};
+    FLDataLayer.geo.cf_location = {"latitude":"30.00320","longitude":"-97.83970","city":"Kyle","postalCode":"78640","region":"Texas","regionCode":"TX"};
+    FLDataLayer.visitor = FLDataLayer.visitor || {};
+    FLDataLayer.visitor.botType = 0;
+    FLDataLayer.visitor.ip = '24.242.20.76';
+    FLDataLayer.pageViewId = '6fdff58191c219cb';
+</script>
+</head>
+<body class="home page-template-default page page-id-4 et-tb-has-template et-tb-has-header et-tb-has-footer  divi-font-awesome site-builder page-home et_monarch et_button_no_icon et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters1 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.498039215686"></fefuncr><fefuncg type="table" tablevalues="0 0.498039215686"></fefuncg><fefuncb type="table" tablevalues="0 0.498039215686"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.549019607843 0.988235294118"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.717647058824 0.254901960784"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.278431372549"></fefuncg><fefuncb type="table" tablevalues="0.592156862745 0.278431372549"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.647058823529"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.780392156863 1"></fefuncr><fefuncg type="table" tablevalues="0 0.949019607843"></fefuncg><fefuncb type="table" tablevalues="0.352941176471 0.470588235294"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.650980392157 0.403921568627"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.447058823529 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.0980392156863 1"></fefuncr><fefuncg type="table" tablevalues="0 0.662745098039"></fefuncg><fefuncb type="table" tablevalues="0.847058823529 0.419607843137"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+<header class="et-l et-l--header">
+<div class="et_builder_inner_content et_pb_gutters1">
+<div class="et_pb_section et_pb_section_0_tb_header sticky et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns">
+<div class="et_pb_column et_pb_column_2_5 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_0_tb_header">
+<a href="index.html" data-wpel-link="internal"><span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2021/04/logo-desktop.png" alt="Lamkin, Van Eman, Trimble &amp; Dougherty, LLC - Lamkin, Van Eman, Trimble &amp; Dougherty, LLC" title="" width="384" height="92" /></span></a>
+</div>
+</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_1_tb_header fl-vertical-center  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_0_tb_header fl-darklinks  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Schedule Your Free Consultation<br> <img class="alignnone wp-image-46664 size-full" src="wp-content/uploads/sites/1402039/2019/10/bg-icon-mobile.png" alt="Bg Icon Mobile" width="22" height="29">  <span class="nap-item nap-item--phone"><a href="tel:+1-614-360-2706" data-wpel-link="internal">614-360-2706</a></span></p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_1_tb_header sticky et_section_regular">
+<div class="et_pb_row et_pb_row_1_tb_header">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><strong>We are open during COVID 19 to help you. We can meet you in person, by Zoom video conference, or by phone.</strong></p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_2_tb_header sticky et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_2_tb_header et_pb_row--with-menu">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header fl-main-menu et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+<div class="et_pb_menu_inner_container clearfix">
+<div class="et_pb_menu__wrap">
+<div class="et_pb_menu__menu">
+<nav class="et-menu-nav"><ul id="menu-main-menu" class="et-menu nav"><li class="menu-item current-menu-item menu-item--depth-0"><a href="index.html" aria-current="page" tabindex="0" data-wpel-link="internal">Home</a></li>
+<li class="menu-item menu-item--depth-0"><a href="attorneys/index.html" tabindex="0" data-wpel-link="internal">Attorneys</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">Practice Areas</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="catastrophic-injuries-fatalities/index.html" tabindex="0" data-wpel-link="internal">Catastrophic Injuries &#038; Fatalities</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/index.html" tabindex="0" data-wpel-link="internal">Auto Accident Injuries</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice</a></li>
+<li class="menu-item menu-item--depth-1"><a href="insurance-disputes/index.html" tabindex="0" data-wpel-link="internal">Insurance Disputes</a></li>
+<li class="menu-item menu-item--depth-1"><a href="other-practice-areas/index.html" tabindex="0" data-wpel-link="internal">Other Practice Areas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="verdicts-settlements/index.html" tabindex="0" data-wpel-link="internal">Verdicts &#038; Settlements</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">FAQ</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/car-accidents/car-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Car Accidents FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/truck-accidents/truck-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Truck Accident FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/medical-malpractice-faq/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="vision-statement/index.html" tabindex="0" data-wpel-link="internal">Mission Statement</a></li>
+<li class="menu-item menu-item--depth-0"><a href="blog/index.html" tabindex="0" data-wpel-link="internal">Blog</a></li>
+<li class="menu-item menu-item--depth-0"><a href="contact/index.html" tabindex="0" data-wpel-link="internal">Contact</a></li>
+</ul></nav>
+</div>
+<div class="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="mobile_menu_bar"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_3_tb_header fl-scroll-header et_section_regular">
+<div class="et_pb_row et_pb_row_3_tb_header">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_4_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_2_tb_header  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Schedule Your Free Consultation <span class="nap-item nap-item--phone"><a href="tel:+1-614-360-2706" data-wpel-link="internal">614-360-2706</a></span></p></div>
+</div>
+</div>
+</div><div class="et_pb_row et_pb_row_4_tb_header et_pb_row--with-menu">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_5_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+<div class="et_pb_module et_pb_menu et_pb_menu_1_tb_header fl-main-menu et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+<div class="et_pb_menu_inner_container clearfix">
+<div class="et_pb_menu__wrap">
+<div class="et_pb_menu__menu">
+<nav class="et-menu-nav"><ul id="menu-main-menu-1" class="et-menu nav"><li class="menu-item current-menu-item menu-item--depth-0"><a href="index.html" aria-current="page" tabindex="0" data-wpel-link="internal">Home</a></li>
+<li class="menu-item menu-item--depth-0"><a href="attorneys/index.html" tabindex="0" data-wpel-link="internal">Attorneys</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">Practice Areas</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="catastrophic-injuries-fatalities/index.html" tabindex="0" data-wpel-link="internal">Catastrophic Injuries &#038; Fatalities</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/index.html" tabindex="0" data-wpel-link="internal">Auto Accident Injuries</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice</a></li>
+<li class="menu-item menu-item--depth-1"><a href="insurance-disputes/index.html" tabindex="0" data-wpel-link="internal">Insurance Disputes</a></li>
+<li class="menu-item menu-item--depth-1"><a href="other-practice-areas/index.html" tabindex="0" data-wpel-link="internal">Other Practice Areas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="verdicts-settlements/index.html" tabindex="0" data-wpel-link="internal">Verdicts &#038; Settlements</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">FAQ</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/car-accidents/car-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Car Accidents FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/truck-accidents/truck-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Truck Accident FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/medical-malpractice-faq/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="vision-statement/index.html" tabindex="0" data-wpel-link="internal">Mission Statement</a></li>
+<li class="menu-item menu-item--depth-0"><a href="blog/index.html" tabindex="0" data-wpel-link="internal">Blog</a></li>
+<li class="menu-item menu-item--depth-0"><a href="contact/index.html" tabindex="0" data-wpel-link="internal">Contact</a></li>
+</ul></nav>
+</div>
+<div class="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="mobile_menu_bar"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_4_tb_header fl-scroll-header et_section_regular">
+<div class="et_pb_row et_pb_row_5_tb_header et_pb_row--with-menu">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_6_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+<div class="et_pb_module et_pb_menu et_pb_menu_2_tb_header fl-main-menu et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+<div class="et_pb_menu_inner_container clearfix">
+<div class="et_pb_menu__wrap">
+<div class="et_pb_menu__menu">
+<nav class="et-menu-nav"><ul id="menu-main-menu-2" class="et-menu nav"><li class="menu-item current-menu-item menu-item--depth-0"><a href="index.html" aria-current="page" tabindex="0" data-wpel-link="internal">Home</a></li>
+<li class="menu-item menu-item--depth-0"><a href="attorneys/index.html" tabindex="0" data-wpel-link="internal">Attorneys</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">Practice Areas</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="catastrophic-injuries-fatalities/index.html" tabindex="0" data-wpel-link="internal">Catastrophic Injuries &#038; Fatalities</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/index.html" tabindex="0" data-wpel-link="internal">Auto Accident Injuries</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice</a></li>
+<li class="menu-item menu-item--depth-1"><a href="insurance-disputes/index.html" tabindex="0" data-wpel-link="internal">Insurance Disputes</a></li>
+<li class="menu-item menu-item--depth-1"><a href="other-practice-areas/index.html" tabindex="0" data-wpel-link="internal">Other Practice Areas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="verdicts-settlements/index.html" tabindex="0" data-wpel-link="internal">Verdicts &#038; Settlements</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">FAQ</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/car-accidents/car-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Car Accidents FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/truck-accidents/truck-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Truck Accident FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/medical-malpractice-faq/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="vision-statement/index.html" tabindex="0" data-wpel-link="internal">Mission Statement</a></li>
+<li class="menu-item menu-item--depth-0"><a href="blog/index.html" tabindex="0" data-wpel-link="internal">Blog</a></li>
+<li class="menu-item menu-item--depth-0"><a href="contact/index.html" tabindex="0" data-wpel-link="internal">Contact</a></li>
+</ul></nav>
+</div>
+<div class="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="mobile_menu_bar"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="fl-template" class="et_pb_section et_pb_section_5_tb_header fl-template fl-template1 et_section_regular">
+<div class="et_pb_row et_pb_row_6_tb_header">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_7_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_1_tb_header">
+<a href="index.html" data-wpel-link="internal"><span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2021/04/logo-desktop.png" alt="" title="" width="384" height="92" /></span></a>
+</div>
+</div>
+</div><div id="fl-sticky-mobile-menu" class="et_pb_row et_pb_row_7_tb_header et_pb_equal_columns et_pb_row--with-menu">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_8_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+<div class="et_pb_module et_pb_menu et_pb_menu_3_tb_header fl-mobile-menu fl-3-column et_pb_bg_layout_light  et_pb_text_align_left et_dropdown_animation_slide et_pb_menu--without-logo et_pb_menu--style-centered">
+<div class="et_pb_menu_inner_container clearfix">
+<div class="et_pb_menu__wrap">
+<div class="et_pb_menu__menu">
+<nav class="et-menu-nav"><ul id="menu-main-menu-3" class="et-menu nav downwards"><li class="menu-item current-menu-item menu-item--depth-0"><a href="index.html" aria-current="page" tabindex="0" data-wpel-link="internal">Home</a></li>
+<li class="menu-item menu-item--depth-0"><a href="attorneys/index.html" tabindex="0" data-wpel-link="internal">Attorneys</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">Practice Areas</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="catastrophic-injuries-fatalities/index.html" tabindex="0" data-wpel-link="internal">Catastrophic Injuries &#038; Fatalities</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/index.html" tabindex="0" data-wpel-link="internal">Auto Accident Injuries</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice</a></li>
+<li class="menu-item menu-item--depth-1"><a href="insurance-disputes/index.html" tabindex="0" data-wpel-link="internal">Insurance Disputes</a></li>
+<li class="menu-item menu-item--depth-1"><a href="other-practice-areas/index.html" tabindex="0" data-wpel-link="internal">Other Practice Areas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="verdicts-settlements/index.html" tabindex="0" data-wpel-link="internal">Verdicts &#038; Settlements</a></li>
+<li class="menu-item menu-item-has-children menu-item--depth-0"><a tabindex="0">FAQ</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/car-accidents/car-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Car Accidents FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="auto-accident-injuries/truck-accidents/truck-accidents-faq/index.html" tabindex="0" data-wpel-link="internal">Truck Accident FAQ</a></li>
+<li class="menu-item menu-item--depth-1"><a href="medical-malpractice/medical-malpractice-faq/index.html" tabindex="0" data-wpel-link="internal">Medical Malpractice FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item--depth-0"><a href="vision-statement/index.html" tabindex="0" data-wpel-link="internal">Mission Statement</a></li>
+<li class="menu-item menu-item--depth-0"><a href="blog/index.html" tabindex="0" data-wpel-link="internal">Blog</a></li>
+<li class="menu-item menu-item--depth-0"><a href="contact/index.html" tabindex="0" data-wpel-link="internal">Contact</a></li>
+</ul></nav>
+</div>
+<div class="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="mobile_menu_bar"></span>
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_center et_pb_module ">
+<a class="et_pb_button et_pb_button_0_tb_header fl-3-column fl-cta-button et_pb_bg_layout_light" href="contact/index.html" data-icon="" data-wpel-link="internal">Email</a>
+</div><div class="et_pb_module et_pb_text et_pb_text_3_tb_header fl-3-column  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><span class="et-pb-icon fl-phone-icon"></span> <span class="nap-item nap-item--phone"><a href="tel:+1-614-360-2706" data-wpel-link="internal">Call</a></span></div>
+</div><div class="et_pb_module et_pb_code et_pb_code_0_tb_header">
+<div class="et_pb_code_inner">
+
+
+</div>
+</div><div class="et_pb_module et_pb_code et_pb_code_1_tb_header">
+<div class="et_pb_code_inner"></div>
+</div>
+</div>
+</div>
+</div> </div>
+</header>
+<div id="et-main-area">
+<div id="main-content">
+<article id="post-4" class="post-4 page type-page status-publish hentry">
+<div class="entry-content">
+<div class="et-l et-l--post">
+<div class="et_builder_inner_content et_pb_gutters1">
+<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_2_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Experienced, Exceptional Team</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_1 fl-banner-title  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Demonstrated In Our Results</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Since 1968, our personal injury attorneys have obtained numerous multimillion-dollar settlements and verdicts for clients all across the state of Ohio. </p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>No Fee Unless You Win</p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_1">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Experienced, Exceptional Team</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_5 fl-banner-title  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Demonstrated In Our Results</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Since 1968, our personal injury attorneys have obtained numerous multimillion-dollar settlements and verdicts for clients all across the state of Ohio. </p></div>
+</div>
+</div>
+</div><div class="et_pb_row et_pb_row_2">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_0">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2021/04/bg-banner-home-internal.jpg" alt="" title="" width="1002" height="637" /></span>
+</div><div class="et_pb_module et_pb_image et_pb_image_1">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2021/07/bg-banner-home-internal-mobile.jpg" alt="" title="" width="360" height="229" /></span>
+</div>
+</div>
+</div>
+</div><div id="fl-home-Pa" class="et_pb_section et_pb_section_2 fl-home-section-1 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_3 et_pb_equal_columns et_pb_gutters1">
+<div class="et_pb_column et_pb_column_1_5 et_pb_column_4 fl-pa-clnm  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_0 fl-blurb-pa et_clickable  et_pb_text_align_left et_pb_section_parallax_hover">
+<div class="et_pb_module_inner">
+<div class="et_pb_blurb_position_top classic  et_pb_bg_layout_light" data-blurb-position="top">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div>Catastrophic Injuries &amp;<br>Fatalities</div>
+<p>Learn More</p></div>
+</div>
+</div> 
+</div>
+
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_5 fl-pa-clnm  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 fl-blurb-pa et_clickable  et_pb_text_align_left et_pb_section_parallax_hover">
+<div class="et_pb_module_inner">
+<div class="et_pb_blurb_position_top classic  et_pb_bg_layout_light" data-blurb-position="top">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div>Auto &amp; Truck Accident Injuries</div>
+<p>Learn More</p></div>
+</div>
+</div> 
+</div>
+
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_6 fl-pa-clnm  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_2 fl-blurb-pa et_clickable  et_pb_text_align_left et_pb_section_parallax_hover">
+<div class="et_pb_module_inner">
+<div class="et_pb_blurb_position_top classic  et_pb_bg_layout_light" data-blurb-position="top">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div>Medical Malpractice</div>
+<p>Learn More</p></div>
+</div>
+</div> 
+</div>
+
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_7 fl-pa-clnm  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_3 fl-blurb-pa et_clickable  et_pb_text_align_left et_pb_section_parallax_hover">
+<div class="et_pb_module_inner">
+<div class="et_pb_blurb_position_top classic  et_pb_bg_layout_light" data-blurb-position="top">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div>Insurance Disputes</div>
+<p>Learn More</p></div>
+</div>
+</div> 
+</div>
+
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_8 fl-pa-clnm  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_4 fl-blurb-pa et_clickable  et_pb_text_align_left et_pb_section_parallax_hover">
+<div class="et_pb_module_inner">
+<div class="et_pb_blurb_position_top classic  et_pb_bg_layout_light" data-blurb-position="top">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div>Other Practice Areas</div>
+<p>Learn More</p></div>
+</div>
+</div> 
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_3 fl-home-section-2 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_4 et_pb_equal_columns">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_7 fl-home-heading  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h1>50 Years Helping Injured Individuals In Columbus Recover Compensation</h1></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_8 fl-darklinks  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Established in 1968, <span class="nap-item nap-item--name">Lamkin, Van Eman, Trimble &amp; Dougherty, LLC</span>, helps Ohio residents recover compensation for a broad range of personal injuries.</p>
+<p>If you are seeking an attorney to help you recover compensation for auto accident injuries, <a href="medical-malpractice/hospital-malpractice/index.html" data-wpel-link="internal">hospital mistakes</a> or injuries caused by <a href="other-practice-areas/product-liability/index.html" data-wpel-link="internal">defective products</a>, you want a law firm that has the commitment, work ethic, recognition and reputation for getting results. We are that firm.</p></div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_2 et_animated et-waypoint">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/iStock-518335452.jpg" alt="Mod Top Left" title="" width="800" height="533" loading="lazy" /></span>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_4 et_animated et_section_regular">
+<div class="et_pb_row et_pb_row_5">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_9 fl-home-heading  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>We Have A Long History Of Success</h2></div>
+</div>
+</div>
+</div><div class="et_pb_row et_pb_row_6 et_pb_equal_columns">
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_0 fl-blurb-case  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div><span>$6,700,000</span></div>
+<p>for truck driver who was filling his tank with gas and was crushed by another truck.<br>
+<a href="verdicts-settlements/index.html" data-wpel-link="internal">See More Results</a></p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_1 fl-blurb-case  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div><span>$2,300,000</span></div>
+<p>for failure to properly monitor a patient following cardiac catheterization resulting in death.<br>
+<a href="verdicts-settlements/index.html" data-wpel-link="internal">See More Results</a></p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_2 fl-blurb-case  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div><span>$4,400,000</span></div>
+<p>for failure of hospital to diagnose and treat patient with diabetic ketoacidosis in the emergency room.<br>
+<a href="verdicts-settlements/index.html" data-wpel-link="internal">See More Results</a></p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_3 fl-blurb-case  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+<div class="et_pb_blurb_content">
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><div><span>$6,700,000</span></div>
+<p>for closed head brain injury of car passenger hit by a truck that failed to stop at a stop sign.<br>
+<a href="verdicts-settlements/index.html" data-wpel-link="internal">See More Results</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_row et_pb_row_7">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>For nearly 50 years, we have established a reputation for getting results. Our attorneys have recovered tens of millions of dollars for clients through the years. Because of our success, <a href="insurance-disputes/index.html" data-wpel-link="internal">insurance</a> companies know that we will spend the time it takes to get our clients top dollar.</p>
+<p>Many of our attorneys have earned distinguished awards, including an AV Preeminent* rating from Martindale-Hubbell and selection in Ohio Super Lawyers. Some of our attorneys are also certified as civil trial advocates by the National Board of Trial Advocacy, a certification limited to a select number of attorneys in the state.</p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_5 fl-home-section-4 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>We Are Committed To Working Hard For You</h2></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>We take pride in providing open and honest communication with our clients, from start to finish. Other attorneys in the area trust us and often refer clients to our practice. If you are a referring attorney, <a href="referring-attorneys/index.html" data-wpel-link="internal">learn more</a> about how we can serve you.</p></div>
+</div>
+</div>
+</div><div class="et_pb_row et_pb_row_9">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module dica_divi_carousel dica_divi_carousel_0 fl-darklinks">
+<div class="et_pb_module_inner">
+<div class="dica-container  desktop_middle-inside tablet_middle-inside mobile_middle-inside" data-props='{"desktop":"4","tablet":"4","mobile":"1","speed":"500","arrow":"off","dots":"off","autoplay":"on","autoSpeed":"1000","loop":"off","item_spacing":"30","center_mode":"off","slider_effec":"1","cover_rotate":"50","pause_onhover":"off","multislide":"off","cfshadow":"on","order":"0","lazyload":"off","lazybefore":"off","scroller_effect":"off","autowidth":"off","item_spacing_tablet":"30","item_spacing_phone":"30","scroller_speed":"4000","hashNavigation":"off","simulatetouch":"off","allowtouchmove":"off"}'>
+<div class="swiper-container">
+<div class="swiper-wrapper"><div class="et_pb_module dica_divi_carouselitem dica_divi_carouselitem_0">
+<div class="et_pb_module_inner">
+<div class="dica-item image_top" data-hash="dica_divi_carouselitem_0">
+<div class="dica-image-container"><a class="image" href="attorney/timothy-l-van-eman/index.html" data-wpel-link="internal"><img loading="lazy" src="wp-content/uploads/sites/1402039/2019/10/VanEman.jpg" alt="VanEman" class="dica-item-image" width="f" height="u"></a></div>
+<div class="dica-item-content"> <div class="content"><p><a href="attorney/timothy-l-van-eman/index.html" data-wpel-link="internal">Timothy L.<br>Van Eman</a></p></div> </div>
+</div>
+</div>
+</div><div class="et_pb_module dica_divi_carouselitem dica_divi_carouselitem_1">
+<div class="et_pb_module_inner">
+<div class="dica-item image_top" data-hash="dica_divi_carouselitem_1">
+<div class="dica-image-container"><a class="image" href="attorney/thomas-w-trimble/index.html" data-wpel-link="internal"><img loading="lazy" src="wp-content/uploads/sites/1402039/2019/10/Trimble.jpg" alt="Trimble" class="dica-item-image" width="f" height="u"></a></div>
+<div class="dica-item-content"> <div class="content"><p><a href="attorney/thomas-w-trimble/index.html" data-wpel-link="internal">Thomas W.<br>Trimble</a></p></div> </div>
+</div>
+</div>
+</div><div class="et_pb_module dica_divi_carouselitem dica_divi_carouselitem_2">
+<div class="et_pb_module_inner">
+<div class="dica-item image_top" data-hash="dica_divi_carouselitem_2">
+<div class="dica-image-container"><a class="image" href="attorney/kathy-a-dougherty/index.html" data-wpel-link="internal"><img loading="lazy" src="wp-content/uploads/sites/1402039/2019/10/Dougherty.jpg" alt="Dougherty" class="dica-item-image" width="f" height="u"></a></div>
+<div class="dica-item-content"> <div class="content"><p><a href="attorney/kathy-a-dougherty/index.html" data-wpel-link="internal">Kathy A.<br>Dougherty</a></p></div> </div>
+</div>
+</div>
+</div><div class="et_pb_module dica_divi_carouselitem dica_divi_carouselitem_3">
+<div class="et_pb_module_inner">
+<div class="dica-item image_top" data-hash="dica_divi_carouselitem_3">
+<div class="dica-image-container"><a class="image" href="attorney/william-w-lamkin/index.html" data-wpel-link="internal"><img loading="lazy" src="wp-content/uploads/sites/1402039/2019/10/Lamkin1.jpg" alt="Lamkin" class="dica-item-image" width="f" height="u"></a></div>
+<div class="dica-item-content"> <div class="content"><p><a href="attorney/william-w-lamkin/index.html" data-wpel-link="internal">William W.<br>Lamkin</a></p></div> </div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_6 et_section_regular">
+<div class="et_pb_row et_pb_row_10">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_13 fl-lightlinks  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Call <span class="nap-item nap-item--phone"><a href="tel:+1-614-360-2706" data-wpel-link="internal">614-360-2706</a></span> today. Free consultations. Contingency fees.</p></div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_7 et_section_regular">
+<div class="et_pb_row et_pb_row_11">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_3">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/badge-super.png" alt="Badge Super" title="" width="259" height="120" loading="lazy" /></span>
+</div>
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_4">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/badge-nbta.png" alt="Badge Nbta" title="" width="113" height="120" loading="lazy" /></span>
+</div>
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_22  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_5">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/badge-av.png" alt="Badge Av" title="" width="220" height="120" loading="lazy" /></span>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_8 fl-home-form-section et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_12 row-2 et_pb_equal_columns">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_23 fl-form-column  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_14 fl-footer-form-module fl-lightlinks  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h3 class="fl-short-form-title">Contact The Firm</h3>
+<noscript class="ninja-forms-noscript-message">
+    Notice: JavaScript is required for this content.</noscript><div id="nf-form-2-cont" class="nf-form-cont fl-short-form" aria-live="polite" aria-labelledby="nf-form-title-2" aria-describedby="nf-form-errors-2" role="form">
+<div class="nf-loading-spinner"></div>
+</div>
+
+<script id="nf-tmpl-cell" type="text/template">
+            <nf-fields></nf-fields>
+        </script>
+<script id="nf-tmpl-row" type="text/template">
+            <nf-cells></nf-cells>
+        </script>
+</div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_24  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>We Have The Skill And Resources To Help You. Contact Us Today.</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>After a serious accident, you need to have the confidence that your lawyer will do what it takes to secure maximum compensation for your injuries.</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>We are experienced, skilled attorneys with a reputation for getting results.</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_18 fl-darklinks  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><a href="contact/index.html" data-wpel-link="internal">Email our firm</a> or call <strong><span class="nap-item nap-item--phone"><a href="tel:+1-614-360-2706" data-wpel-link="internal">614-360-2706</a></span> </strong>today. Free consultations. Contingency fees.</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</article>
+</div>
+<footer class="et-l et-l--footer">
+<div class="et_builder_inner_content et_pb_gutters1">
+<div class="et_pb_section et_pb_section_1_tb_footer fl-footer-badges et_section_regular">
+<div class="et_pb_row et_pb_row_0_tb_footer">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/badge-super.png" alt="Badge Super" title="" width="259" height="120" loading="lazy" /></span>
+</div>
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/badge-nbta.png" alt="Badge Nbta" title="" width="113" height="120" loading="lazy" /></span>
+</div>
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2019/10/badge-av.png" alt="Badge Av" title="" width="220" height="120" loading="lazy" /></span>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_2_tb_footer et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_1_tb_footer">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3_tb_footer">
+<span class="et_pb_image_wrap "><img src="wp-content/uploads/sites/1402039/2021/12/bg-map-mobile.jpg" alt="Map-mobile" title="" width="591" height="290" loading="lazy" /></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>Get In Touch</h2></div>
+</div>
+</div>
+</div><div class="et_pb_row et_pb_row_2_tb_footer">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><span class="nap-item nap-item--address">9482 Wedgewood Blvd.<br>Suite 200<br>Powell, OH 43065</span></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_2_tb_footer fl-footer-hover-link fl-map-link   et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><a href="columbus-personal-injury-and-medical-malpractice-office/index.html" data-wpel-link="internal">Columbus Law Office Map </a></p></div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_footer fl-lightlinks  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><span class="nap-item nap-item--phone"><a href="tel:+1-614-360-2706" data-wpel-link="internal">614-360-2706</a></span></div>
+</div>
+</div>
+</div><div class="et_pb_module et_pb_blurb et_pb_blurb_1_tb_footer fl-lightlinks  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+<div class="et_pb_blurb_container">
+<div class="et_pb_blurb_description"><span class="nap-item nap-item--phone nap-fax">330-302-9230</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="et_pb_section et_pb_section_3_tb_footer et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_3_tb_footer fl-mobile-row et_pb_equal_columns et_pb_gutters1">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_7_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper et_pb_button_alignment_right et_pb_module ">
+<a class="et_pb_button et_pb_button_0_tb_footer et_pb_bg_layout_light" href="https://reviewplatform.findlaw.com/injurymedmal/" target="_blank" data-wpel-link="external" rel="noopener noreferrer">Review Us</a>
+</div>
+</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_8_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_left et_pb_bg_layout_light">
+<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"><a href="https://www.facebook.com/LamkinLaw" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank" data-wpel-link="external" rel="noopener noreferrer"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li><li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="https://www.linkedin.com/company/2792900" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank" data-wpel-link="external" rel="noopener noreferrer"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li><li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="https://twitter.com/InjuryMedMalLaw" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank" data-wpel-link="external" rel="noopener noreferrer"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+</ul>
+</div>
+</div><div class="et_pb_row et_pb_row_4_tb_footer">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_9_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_3_tb_footer fl-av-text  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><p>*AV®, AV Preeminent®, Martindale-Hubbell Distinguished and Martindale-Hubbell Notable are certification marks used under license in accordance with the Martindale-Hubbell certification procedures, standards and policies. Martindale-Hubbell® is the facilitator of a peer review rating process. Ratings reflect the anonymous opinions of members of the bar and the judiciary. Martindale-Hubbell® Peer Review Ratings™ fall into two categories — legal ability and general ethical standards.</p></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_4_tb_footer fl-footer-hover-link  et_pb_text_align_center et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><div class="default-footer">
+<div class="flfooterbrand">
+<p style="text-align: center;">&copy; 2022 <a href="https://lawyers.findlaw.com/profile/view/2378073_1" target="_blank" data-wpel-link="external" rel="noopener noreferrer">Lamkin, Van Eman, Trimble &amp; Dougherty, LLC</a> • All Rights Reserved</p>
+</div>
+<div class="flfooterlink">
+<p style="text-align: center;"><a href="disclaimer/index.html" data-wpel-link="internal">Disclaimer</a> | <a href="site-map/index.html" data-wpel-link="internal">Site Map</a> | <a href="privacy/index.html" data-wpel-link="internal">Privacy Policy</a> | <a href="https://www.lawyermarketing.com/" target="_blank" rel="noopener noreferrer" data-wpel-link="external">Business Development Solutions</a> by <a href="https://www.findlaw.com/" target="_blank" rel="noopener noreferrer" data-wpel-link="external">FindLaw</a>, part of Thomson Reuters</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div> </div>
+</footer>
+</div>
+</div>
+</div>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"https:\/\/www.injurymedmal.com#website","name":"Lamkin, Van Eman, Trimble & Dougherty, LLC"}</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"LegalService","@id":"https:\/\/www.injurymedmal.com","name":"Lamkin, Van Eman, Trimble & Dougherty, LLC","telephone":"+1-614-360-2706","address":[{"@type":"PostalAddress","@id":"https:\/\/www.injurymedmal.com\/Powell\/OH","streetAddress":"9482 Wedgewood Blvd., Suite 200","addressLocality":"Powell","addressRegion":"OH","postalCode":"43065","addressCountry":"US"}],"image":"http:\/\/wldimages.findlaw.com\/images\/2378073\/2378073_1.jpg","geo":{"@type":"GeoCoordinates","latitude":"40.1578700","longitude":"-83.1007436"}}</script>
+<script id="tmpl-nf-layout" type="text/template">
+	<span id="nf-form-title-{{{ data.id }}}" class="nf-form-title">
+		{{{ ( 1 == data.settings.show_title ) ? '<h3>' + data.settings.title + '</h3>' : '' }}}
+	</span>
+	<div class="nf-form-wrap ninja-forms-form-wrap">
+		<div class="nf-response-msg"></div>
+		<div class="nf-debug-msg"></div>
+		<div class="nf-before-form"></div>
+		<div class="nf-form-layout"></div>
+		<div class="nf-after-form"></div>
+	</div>
+</script>
+<script id="tmpl-nf-empty" type="text/template">
+
+</script>
+<script id="tmpl-nf-before-form" type="text/template">
+	{{{ data.beforeForm }}}
+</script><script id="tmpl-nf-after-form" type="text/template">
+	{{{ data.afterForm }}}
+</script><script id="tmpl-nf-before-fields" type="text/template">
+    <div class="nf-form-fields-required">{{{ data.renderFieldsMarkedRequired() }}}</div>
+    {{{ data.beforeFields }}}
+</script><script id="tmpl-nf-after-fields" type="text/template">
+    {{{ data.afterFields }}}
+    <div id="nf-form-errors-{{{ data.id }}}" class="nf-form-errors" role="alert"></div>
+    <div class="nf-form-hp"></div>
+</script>
+<script id="tmpl-nf-before-field" type="text/template">
+    {{{ data.beforeField }}}
+</script><script id="tmpl-nf-after-field" type="text/template">
+    {{{ data.afterField }}}
+</script><script id="tmpl-nf-form-layout" type="text/template">
+	<form>
+		<div>
+			<div class="nf-before-form-content"></div>
+			<div class="nf-form-content {{{ data.element_class }}}"></div>
+			<div class="nf-after-form-content"></div>
+		</div>
+	</form>
+</script><script id="tmpl-nf-form-hp" type="text/template">
+	<label for="nf-field-hp-{{{ data.id }}}" aria-hidden="true">
+		{{{ nfi18n.formHoneypot }}}
+		<input id="nf-field-hp-{{{ data.id }}}" name="nf-field-hp" class="nf-element nf-field-hp" type="text" value=""/>
+	</label>
+</script>
+<script id="tmpl-nf-field-layout" type="text/template">
+    <div id="nf-field-{{{ data.id }}}-container" class="nf-field-container {{{ data.type }}}-container {{{ data.renderContainerClass() }}}">
+        <div class="nf-before-field"></div>
+        <div class="nf-field"></div>
+        <div class="nf-after-field"></div>
+    </div>
+</script>
+<script id="tmpl-nf-field-before" type="text/template">
+    {{{ data.beforeField }}}
+</script><script id="tmpl-nf-field-after" type="text/template">
+    <#
+    /*
+     * Render our input limit section if that setting exists.
+     */
+    #>
+    <div class="nf-input-limit"></div>
+    <#
+    /*
+     * Render our error section if we have an error.
+     */
+    #>
+    <div id="nf-error-{{{ data.id }}}" class="nf-error-wrap nf-error" role="alert"></div>
+    <#
+    /*
+     * Render any custom HTML after our field.
+     */
+    #>
+    {{{ data.afterField }}}
+</script>
+<script id="tmpl-nf-field-wrap" type="text/template">
+	<div id="nf-field-{{{ data.id }}}-wrap" class="{{{ data.renderWrapClass() }}}" data-field-id="{{{ data.id }}}">
+		<#
+		/*
+		 * This is our main field template. It's called for every field type.
+		 * Note that must have ONE top-level, wrapping element. i.e. a div/span/etc that wraps all of the template.
+		 */
+        #>
+		<#
+		/*
+		 * Render our label.
+		 */
+        #>
+		{{{ data.renderLabel() }}}
+		<#
+		/*
+		 * Render our field element. Uses the template for the field being rendered.
+		 */
+        #>
+		<div class="nf-field-element">{{{ data.renderElement() }}}</div>
+		<#
+		/*
+		 * Render our Description Text.
+		 */
+        #>
+		{{{ data.renderDescText() }}}
+	</div>
+</script>
+<script id="tmpl-nf-field-wrap-no-label" type="text/template">
+    <div id="nf-field-{{{ data.id }}}-wrap" class="{{{ data.renderWrapClass() }}}" data-field-id="{{{ data.id }}}">
+        <div class="nf-field-label"></div>
+        <div class="nf-field-element">{{{ data.renderElement() }}}</div>
+        <div class="nf-error-wrap"></div>
+    </div>
+</script>
+<script id="tmpl-nf-field-wrap-no-container" type="text/template">
+
+        {{{ data.renderElement() }}}
+
+        <div class="nf-error-wrap"></div>
+</script>
+<script id="tmpl-nf-field-label" type="text/template">
+	<div class="nf-field-label"><label for="nf-field-{{{ data.id }}}"
+	                                   id="nf-label-field-{{{ data.id }}}"
+	                                   class="{{{ data.renderLabelClasses() }}}">{{{ data.label }}} {{{ ( 'undefined' != typeof data.required && 1 == data.required ) ? '<span class="ninja-forms-req-symbol">*</span>' : '' }}} {{{ data.maybeRenderHelp() }}}</label></div>
+</script>
+<script id="tmpl-nf-field-error" type="text/template">
+	<div class="nf-error-msg nf-error-{{{ data.id }}}">{{{ data.msg }}}</div>
+</script><script id="tmpl-nf-form-error" type="text/template">
+	<div class="nf-error-msg nf-error-{{{ data.id }}}">{{{ data.msg }}}</div>
+</script><script id="tmpl-nf-field-input-limit" type="text/template">
+    {{{ data.currentCount() }}} {{{ nfi18n.of }}} {{{ data.input_limit }}} {{{ data.input_limit_msg }}}
+</script><script id="tmpl-nf-field-null" type="text/template">
+</script><script id="tmpl-nf-field-firstname" type="text/template">
+    <input
+            type="text"
+            value="{{{ data.value }}}"
+            class="{{{ data.renderClasses() }}} nf-element"
+
+            id="nf-field-{{{ data.id }}}"
+            <# if( ! data.disable_browser_autocompletes ){ #>
+            name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+            autocomplete="given-name"
+            <# } else { #>
+            name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+            {{{ data.maybeDisableAutocomplete() }}}
+            <# } #>
+            {{{ data.renderPlaceholder() }}}
+
+            aria-invalid="false"
+            aria-describedby="nf-error-{{{ data.id }}}"
+            aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+            {{{ data.maybeRequired() }}}
+    >
+</script>
+<script id="tmpl-nf-field-input" type="text/template">
+    <input id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" aria-invalid="false" aria-describedby="nf-error-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element" type="text" value="{{{ data.value }}}" {{{ data.renderPlaceholder() }}} {{{ data.maybeDisabled() }}}
+           aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+            {{{ data.maybeRequired() }}}
+    >
+</script>
+<script id="tmpl-nf-field-email" type="text/template">
+	<input
+			type="email"
+			value="{{{ data.value }}}"
+			class="{{{ data.renderClasses() }}} nf-element"
+
+			id="nf-field-{{{ data.id }}}"
+			<# if( ! data.disable_browser_autocompletes ){ #>
+			name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+			autocomplete="email"
+			<# } else { #>
+			name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+			{{{ data.maybeDisableAutocomplete() }}}
+			<# } #>
+			{{{ data.renderPlaceholder() }}}
+			{{{ data.maybeDisabled() }}}
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+	>
+</script>
+<script id="tmpl-nf-field-tel" type="text/template">
+	<input
+			type="tel"
+			value="{{{ data.value }}}"
+			class="{{{ data.renderClasses() }}} nf-element"
+
+			id="nf-field-{{{ data.id }}}"
+			<# if( ! data.disable_browser_autocompletes ){ #>
+			name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+			autocomplete="tel"
+			<# } else { #>
+			name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+			{{{ data.maybeDisableAutocomplete() }}}
+			<# } #>
+			{{{ data.renderPlaceholder() }}}
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+	>
+</script>
+<script id="tmpl-nf-field-textbox" type="text/template">
+	<input
+			type="text"
+			value="{{{ data.value }}}"
+			class="{{{ data.renderClasses() }}} nf-element"
+			{{{ data.renderPlaceholder() }}}
+			{{{ data.maybeDisabled() }}}
+			{{{ data.maybeInputLimit() }}}
+
+			id="nf-field-{{{ data.id }}}"
+			<# if( ! data.disable_browser_autocomplete && -1 < [ 'city', 'zip' ].indexOf( data.type ) ){ #>
+				name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+				autocomplete="on"
+			<# } else { #>
+				name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+				{{{ data.maybeDisableAutocomplete() }}}
+			<# } #>
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+	>
+</script>
+<script id="tmpl-nf-field-textarea" type="text/template">
+    <textarea id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" aria-invalid="false" aria-describedby="nf-error-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element" {{{ data.renderPlaceholder() }}} {{{ data.maybeDisabled() }}} {{{ data.maybeDisableAutocomplete() }}} {{{ data.maybeInputLimit() }}}
+        aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+        {{{ data.maybeRequired() }}}
+    >{{{ data.value }}}</textarea>
+</script>
+
+<script id="tmpl-nf-rte-media-button" type="text/template">
+    <span class="dashicons dashicons-admin-media"></span>
+</script>
+<script id="tmpl-nf-rte-link-button" type="text/template">
+    <span class="dashicons dashicons-admin-links"></span>
+</script>
+<script id="tmpl-nf-rte-unlink-button" type="text/template">
+    <span class="dashicons dashicons-editor-unlink"></span>
+</script>
+<script id="tmpl-nf-rte-link-dropdown" type="text/template">
+    <div class="summernote-link">
+        URL
+        <input type="url" class="widefat code link-url"> <br />
+        Text
+        <input type="url" class="widefat code link-text"> <br />
+        <label>
+            <input type="checkbox" class="link-new-window"> {{{ nfi18n.fieldsTextareaOpenNewWindow }}}
+        </label>
+        <input type="button" class="cancel-link extra" value="Cancel">
+        <input type="button" class="insert-link extra" value="Insert">
+    </div>
+</script>
+<script id="tmpl-nf-field-checkbox" type="text/template">
+	<input id="nf-field-{{{ data.id }}}"
+	       name="nf-field-{{{ data.id }}}"
+	       aria-describedby="nf-error-{{{ data.id }}}"
+	       class="{{{ data.renderClasses() }}} nf-element"
+	       type="checkbox"
+	       value="1" {{{ data.maybeDisabled() }}}{{{ data.maybeChecked() }}}
+	       aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+	>
+</script>
+<script id="tmpl-nf-field-html" type="text/template">
+    {{{ data.value }}}
+</script>
+<script id="tmpl-nf-field-submit" type="text/template">
+	<input id="nf-field-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element " type="button" value="{{{ data.label }}}" {{{ ( data.disabled ) ? 'disabled' : '' }}}>
+</script><script id="tmpl-nf-field-button" type="text/template">
+    <button id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" class="{{{ data.classes }}} nf-element">
+        {{{ data.label }}}
+    </button>
+</script>
+<span class="et_pb_scroll_top et-pb-icon"></span>
+<script src="wp-content/cache/jch-optimize/js/17101d8d50a5143bfafed9d037984cad.js" defer="defer"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6fef32e90c250c23","token":"06df63fd98e34658860082647ebedbb4","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.injurymedmal.com/?p=47663 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Apr 2022 16:32:57 GMT -->
+</html>

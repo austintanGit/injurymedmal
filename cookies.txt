@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.injurymedmal.com	TRUE	/	FALSE	1999999999	mappedDomain	3309238.findlaw4.flsitebuilder.com
+www.injurymedmal.com	TRUE	/	FALSE	1999999999	cacheVersion	22.4.2
+www.injurymedmal.com	TRUE	/	FALSE	1999999999	digest	9561cfc69eaf4ed7a761656b35346473665f1020
+.www.cdc.gov	TRUE	/	FALSE	1999999999	TS0196e5be	012409b35328f2257b10081d3b63fdaaafe3e3ee03a6604aa437042d82f4ebcb4a171c7827869b0dc9ccf62d26ecf10007b9d3c7cb
+www.cdc.gov	TRUE	/	FALSE	1999999999	akamai_visit_id	840cc41770124a2f0e1e
+www.injurymedmal.com	TRUE	/	FALSE	1999999999	SameSite	None
+.flsitebuilder.com	TRUE	/	FALSE	1999999999	__cf_bm	z_Bv7JjnotR70D8xhJ0jQSqk6t8hJgSa_hJ2kOtWRcg-1650469661-0-ASuTvHmYxSMYWgqtllxXWNoDAGFG8I3yNa1PUf0SNVgW9PIPCfjC47axytKJlYqnHzyP3shcKW6eh2xmyLVjpqU=
+
